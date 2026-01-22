@@ -189,3 +189,27 @@ footer {
 .btn-submit:hover {
     background-color: #172a45;
 }
+
+/* Update this section in styles.css */
+
+.logo {
+    display: flex;         /* Aligns image and text side-by-side */
+    align-items: center;   /* Vertically centers them */
+    gap: 12px;             /* Adds space between the icon and text */
+    text-decoration: none;
+}
+
+/* This controls the logo image size */
+.logo img {
+    height: 40px;          /* Sets a fixed height so it fits in the header */
+    width: auto;           /* Keeps the logo shape/aspect ratio correct */
+}
+
+/* This styles the text next to the logo */
+.logo span {
+    color: var(--secondary);
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
