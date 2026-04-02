@@ -769,7 +769,7 @@ Recommended order:
 6. Extend the same system to Collie, Company, and Contact.
 
 ## 22. Sources
-- Requirements: [requirements.md](/Users/yijiang/Documents/temporis-ai.github.io/requirements.md)
+- Requirements: [requirements.md](requirements.md)
 - Nielsen Norman Group, visual hierarchy and design principles: https://www.nngroup.com/articles/principles-visual-design/
 - Baymard Institute, readable line length guidance: https://baymard.com/blog/line-length-readability
 - web.dev, responsive design basics: https://web.dev/articles/responsive-web-design-basics

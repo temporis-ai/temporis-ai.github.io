@@ -1,7 +1,7 @@
 # Temporis Website Implementation Plan
 
 ## 1. Purpose
-This document translates [design.md](/Users/yijiang/Documents/temporis-ai.github.io/design.md) into an implementation plan for the current repository.
+This document translates [design.md](design.md) into an implementation plan for the current repository.
 
 It defines:
 
@@ -39,10 +39,10 @@ Do not expose internal model terminology as a top-level navigation requirement f
 ## 2. Current Repo Assessment
 Current repo files:
 
-- [index.html](/Users/yijiang/Documents/temporis-ai.github.io/index.html)
-- [about.html](/Users/yijiang/Documents/temporis-ai.github.io/about.html)
-- [contact.html](/Users/yijiang/Documents/temporis-ai.github.io/contact.html)
-- [styles.css](/Users/yijiang/Documents/temporis-ai.github.io/styles.css)
+- [index.html](../index.html)
+- [about.html](../about.html)
+- [contact.html](../contact.html)
+- [styles.css](../styles.css)
 
 Current issues relative to the design:
 
@@ -54,12 +54,12 @@ Current issues relative to the design:
 ## 3. Target File Structure
 
 ### Keep
-- [index.html](/Users/yijiang/Documents/temporis-ai.github.io/index.html)
-- [contact.html](/Users/yijiang/Documents/temporis-ai.github.io/contact.html)
-- [styles.css](/Users/yijiang/Documents/temporis-ai.github.io/styles.css)
+- [index.html](../index.html)
+- [contact.html](../contact.html)
+- [styles.css](../styles.css)
 
 ### Rewrite / repurpose
-- [about.html](/Users/yijiang/Documents/temporis-ai.github.io/about.html) -> company page content
+- [about.html](../about.html) -> company page content
 
 ### Create
 - `vista.html`
@@ -123,7 +123,7 @@ This avoids rebuilding the same design decisions multiple times.
 
 ### Home
 File:
-- [index.html](/Users/yijiang/Documents/temporis-ai.github.io/index.html)
+- [index.html](../index.html)
 
 Required sections:
 - sticky header
@@ -137,7 +137,7 @@ Required sections:
 
 ### Temporis Vista
 File:
-- `/Users/yijiang/Documents/temporis-ai.github.io/vista.html`
+- `../vista.html`
 
 Required sections:
 - product hero
@@ -158,7 +158,7 @@ Launch behavior:
 
 ### Temporis Platform
 File:
-- `/Users/yijiang/Documents/temporis-ai.github.io/platform.html`
+- `../platform.html`
 
 Required sections:
 - product hero
@@ -180,7 +180,7 @@ Launch behavior:
 
 ### Company
 File:
-- [about.html](/Users/yijiang/Documents/temporis-ai.github.io/about.html)
+- [about.html](../about.html)
 
 Required sections:
 - company summary
@@ -194,7 +194,7 @@ Required sections:
 
 ### Contact
 File:
-- [contact.html](/Users/yijiang/Documents/temporis-ai.github.io/contact.html)
+- [contact.html](../contact.html)
 
 Required sections:
 - contact intro
@@ -205,9 +205,9 @@ Required sections:
 
 ### Legal
 Files:
-- `/Users/yijiang/Documents/temporis-ai.github.io/privacy.html`
-- `/Users/yijiang/Documents/temporis-ai.github.io/terms.html`
-- `/Users/yijiang/Documents/temporis-ai.github.io/disclaimer.html`
+- `../privacy.html`
+- `../terms.html`
+- `../disclaimer.html`
 
 Required sections:
 - clear heading
@@ -257,7 +257,7 @@ Use a small static component vocabulary expressed through repeated HTML patterns
 ## 7. CSS System Plan
 Use one stylesheet for v1 unless it becomes unmanageable.
 
-### CSS responsibilities in [styles.css](/Users/yijiang/Documents/temporis-ai.github.io/styles.css)
+### CSS responsibilities in [styles.css](../styles.css)
 - CSS custom properties for color, spacing, typography, radius, border, and motion
 - base element styling
 - layout utilities
@@ -470,11 +470,11 @@ Acceptance:
 
 ## 15. Recommended Work Order in This Repo
 
-1. Rework [styles.css](/Users/yijiang/Documents/temporis-ai.github.io/styles.css) into a tokenized design system.
-2. Rebuild [index.html](/Users/yijiang/Documents/temporis-ai.github.io/index.html) around the new homepage wireframe.
+1. Rework [styles.css](../styles.css) into a tokenized design system.
+2. Rebuild [index.html](../index.html) around the new homepage wireframe.
 3. Create `vista.html` and `platform.html`.
-4. Rewrite [about.html](/Users/yijiang/Documents/temporis-ai.github.io/about.html) as the company page.
-5. Rewrite [contact.html](/Users/yijiang/Documents/temporis-ai.github.io/contact.html).
+4. Rewrite [about.html](../about.html) as the company page.
+5. Rewrite [contact.html](../contact.html).
 6. Create `privacy.html`, `terms.html`, and `disclaimer.html`.
 7. Remove obsolete logo experiments and legacy pages that are no longer linked.
 8. Run a final cross-page pass for nav consistency, copy consistency, accessibility, and SEO metadata.
@@ -484,7 +484,7 @@ Implementation is complete when:
 
 - all required pages exist
 - navigation and footer are consistent across pages
-- the site matches the information architecture in [design.md](/Users/yijiang/Documents/temporis-ai.github.io/design.md)
+- the site matches the information architecture in [design.md](design.md)
 - the brand feels product-led, technically serious, and restrained
 - all pages are responsive
 - legal links exist and are reachable
@@ -500,7 +500,7 @@ Comprehension quality specifically means a first-time visitor can understand the
 ## 17. Immediate Next Step
 The next practical step is to implement Phase 1:
 
-- rebuild [styles.css](/Users/yijiang/Documents/temporis-ai.github.io/styles.css)
-- rebuild [index.html](/Users/yijiang/Documents/temporis-ai.github.io/index.html)
+- rebuild [styles.css](../styles.css)
+- rebuild [index.html](../index.html)
 
 That gives the project the visual system, navigation, and homepage structure needed for the rest of the site.
