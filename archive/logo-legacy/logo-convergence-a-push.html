@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temporis Dual Merge Push</title>
+  <style>
+    :root {
+      --ink: #0f1722;
+      --slate: #4a5565;
+      --mist: #d7dfe6;
+      --white: #ffffff;
+      --cloud: #f7f9fb;
+      --blue: #2563eb;
+      --teal: #0f8c82;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 40px;
+      font-family: Inter, "Segoe UI", Arial, sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top left, rgba(37, 99, 235, 0.05), transparent 24%),
+        linear-gradient(180deg, #fbfcfe 0%, #f4f7fa 100%);
+    }
+    main {
+      max-width: 1360px;
+      margin: 0 auto;
+      display: grid;
+      gap: 28px;
+    }
+    h1 {
+      margin: 0;
+      font-size: 50px;
+      letter-spacing: -0.04em;
+    }
+    .lede {
+      margin: 0;
+      max-width: 84ch;
+      color: var(--slate);
+      line-height: 1.72;
+      font-size: 17px;
+    }
+    .eval {
+      padding: 24px 26px;
+      border-radius: 24px;
+      border: 1px solid rgba(15, 23, 34, 0.08);
+      background: rgba(255,255,255,0.93);
+      box-shadow: 0 20px 56px rgba(15,23,34,0.05);
+      display: grid;
+      gap: 10px;
+    }
+    .eval p {
+      margin: 0;
+      color: var(--slate);
+      line-height: 1.65;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 24px;
+    }
+    .card {
+      padding: 28px;
+      border-radius: 28px;
+      border: 1px solid rgba(15, 23, 34, 0.08);
+      background: rgba(255,255,255,0.93);
+      box-shadow: 0 22px 58px rgba(15,23,34,0.06);
+      display: grid;
+      gap: 20px;
+    }
+    .eyebrow {
+      margin: 0;
+      color: var(--slate);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+    h2 {
+      margin: 4px 0 0;
+      font-size: 28px;
+      letter-spacing: -0.03em;
+    }
+    .summary {
+      margin: 0;
+      color: var(--slate);
+      font-size: 15px;
+      line-height: 1.65;
+    }
+    .stage {
+      padding: 22px;
+      border-radius: 24px;
+      border: 1px solid rgba(15, 23, 34, 0.08);
+      background: linear-gradient(180deg, rgba(255,255,255,0.98), rgba(248,250,252,0.98));
+      display: grid;
+      gap: 18px;
+    }
+    .hero {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      min-height: 136px;
+    }
+    .hero p {
+      margin: 0;
+      color: var(--slate);
+      font-size: 14px;
+      line-height: 1.65;
+    }
+    .scale {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .chip {
+      width: 84px;
+      height: 84px;
+      border-radius: 22px;
+      border: 1px solid rgba(15,23,34,0.08);
+      background: var(--white);
+      display: grid;
+      place-items: center;
+    }
+    .chip.dark {
+      background: var(--ink);
+      border-color: rgba(255,255,255,0.08);
+    }
+    .chip.small {
+      width: 52px;
+      height: 52px;
+      border-radius: 16px;
+    }
+    .note {
+      margin: 0;
+      color: var(--slate);
+      font-size: 13px;
+      line-height: 1.6;
+    }
+    svg.hero-mark {
+      width: 122px;
+      height: 122px;
+      flex: 0 0 auto;
+    }
+    svg.use {
+      width: 56px;
+      height: 56px;
+    }
+    svg.use.small {
+      width: 30px;
+      height: 30px;
+    }
+    @media (max-width: 1180px) {
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Temporis Dual Merge Push</h1>
+      <p class="lede">`Refinement A` is one of the better concept-to-logo bridges so far: strong conceptual fit, better distinctiveness than the box-and-bar family, and still simple enough to reduce. Its weakness is that the current drawing is slightly too intricate in the merge area. This round simplifies and strengthens the geometry.</p>
+    </header>
+
+    <section class="eval">
+      <p><strong>Evaluation of A:</strong> strong on distinctiveness and brand fit, moderate on simplicity, good but not yet excellent on small-size behavior.</p>
+      <p><strong>What to improve:</strong> reduce bends, thicken the main path, make the merge more immediate, and give the symbol a clearer primary silhouette.</p>
+      <p><strong>What to keep:</strong> dual-path convergence, abstract time logic, and a non-UI feeling.</p>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <div>
+          <p class="eyebrow">Push 1</p>
+          <h2>Cleaner Merge</h2>
+        </div>
+        <p class="summary">The secondary path is shortened and the main trunk is thickened. This makes the symbol read more like one mark instead of two joined paths.</p>
+        <div class="stage">
+          <div class="hero">
+            <svg class="hero-mark" viewBox="0 0 122 122" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M22 30C22 24.4772 26.4772 20 32 20H38C46.8366 20 54 27.1634 54 36V50C54 54.4183 57.5817 58 62 58H74C82.8366 58 90 65.1634 90 74V90C90 95.5228 85.5228 100 80 100H74C68.4772 100 64 95.5228 64 90V76C64 71.5817 60.4183 68 56 68H44C35.1634 68 28 60.8366 28 52V36C28 32.6863 25.3137 30 22 30Z" fill="#0F1722"/>
+              <path d="M58 24H62C70.8366 24 78 31.1634 78 40V48C78 52.4183 81.5817 56 86 56H92C97.5228 56 102 60.4772 102 66V70C102 75.5228 97.5228 80 92 80H86C77.1634 80 70 72.8366 70 64V42C70 37.5817 66.4183 34 62 34H58V24Z" fill="#0F8C82"/>
+            </svg>
+            <p>Strongest all-around refinement. The convergence idea is still there, but the mark is quieter and more self-contained.</p>
+          </div>
+          <div class="scale">
+            <div class="chip">
+              <svg class="use" viewBox="0 0 122 122" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22 30C22 24.4772 26.4772 20 32 20H38C46.8366 20 54 27.1634 54 36V50C54 54.4183 57.5817 58 62 58H74C82.8366 58 90 65.1634 90 74V90C90 95.5228 85.5228 100 80 100H74C68.4772 100 64 95.5228 64 90V76C64 71.5817 60.4183 68 56 68H44C35.1634 68 28 60.8366 28 52V36C28 32.6863 25.3137 30 22 30Z" fill="#0F1722"/><path d="M58 24H62C70.8366 24 78 31.1634 78 40V48C78 52.4183 81.5817 56 86 56H92C97.5228 56 102 60.4772 102 66V70C102 75.5228 97.5228 80 92 80H86C77.1634 80 70 72.8366 70 64V42C70 37.5817 66.4183 34 62 34H58V24Z" fill="#0F8C82"/></svg>
+            </div>
+            <div class="chip dark">
+              <svg class="use" viewBox="0 0 122 122" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22 30C22 24.4772 26.4772 20 32 20H38C46.8366 20 54 27.1634 54 36V50C54 54.4183 57.5817 58 62 58H74C82.8366 58 90 65.1634 90 74V90C90 95.5228 85.5228 100 80 100H74C68.4772 100 64 95.5228 64 90V76C64 71.5817 60.4183 68 56 68H44C35.1634 68 28 60.8366 28 52V36C28 32.6863 25.3137 30 22 30Z" fill="#FFFFFF"/><path d="M58 24H62C70.8366 24 78 31.1634 78 40V48C78 52.4183 81.5817 56 86 56H92C97.5228 56 102 60.4772 102 66V70C102 75.5228 97.5228 80 92 80H86C77.1634 80 70 72.8366 70 64V42C70 37.5817 66.4183 34 62 34H58V24Z" fill="#2563EB"/></svg>
+            </div>
+            <div class="chip small">
+              <svg class="use small" viewBox="0 0 122 122" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M26 30C26 24.4772 30.4772 20 36 20H40C48.8366 20 56 27.1634 56 36V50C56 54.4183 59.5817 58 64 58H74C82.8366 58 90 65.1634 90 74V88C90 93.5228 85.5228 98 80 98H74C68.4772 98 64 93.5228 64 88V76C64 71.5817 60.4183 68 56 68H46C37.1634 68 30 60.8366 30 52V36C30 32.6863 27.3137 30 24 30H26Z" fill="#0F1722"/></svg>
+            </div>
+          </div>
+          <p class="note">Most likely improvement path if this direction stays alive.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div>
+          <p class="eyebrow">Push 2</p>
+          <h2>Heavier Trunk</h2>
+        </div>
+        <p class="summary">The merged output becomes more dominant and the secondary signal becomes shorter. This improves hierarchy and small-size performance.</p>
+        <div class="stage">
+          <div class="hero">
+            <svg class="hero-mark" viewBox="0 0 122 122" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M24 30C24 24.4772 28.4772 20 34 20H40C48.8366 20 56 27.1634 56 36V50C56 54.4183 59.5817 58 64 58H74C82.8366 58 90 65.1634 90 74V92C90 97.5228 85.5228 102 80 102H72C66.4772 102 62 97.5228 62 92V76C62 71.5817 58.4183 68 54 68H46C37.1634 68 30 60.8366 30 52V36C30 32.6863 27.3137 30 24 30Z" fill="#0F1722"/>
+              <path d="M60 24H64C72.8366 24 80 31.1634 80 40V46C80 50.4183 83.5817 54 88 54H94C98.4183 54 102 57.5817 102 62V66C102 70.4183 98.4183 74 94 74H88C79.1634 74 72 66.8366 72 58V42C72 37.5817 68.4183 34 64 34H60V24Z" fill="#0F8C82"/>
+            </svg>
+            <p>More decisive and practical. Less nuanced than Push 1, but stronger when reduced.</p>
+          </div>
+          <div class="scale">
+            <div class="chip">
+              <svg class="use" viewBox="0 0 122 122" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 30C24 24.4772 28.4772 20 34 20H40C48.8366 20 56 27.1634 56 36V50C56 54.4183 59.5817 58 64 58H74C82.8366 58 90 65.1634 90 74V92C90 97.5228 85.5228 102 80 102H72C66.4772 102 62 97.5228 62 92V76C62 71.5817 58.4183 68 54 68H46C37.1634 68 30 60.8366 30 52V36C30 32.6863 27.3137 30 24 30Z" fill="#0F1722"/><path d="M60 24H64C72.8366 24 80 31.1634 80 40V46C80 50.4183 83.5817 54 88 54H94C98.4183 54 102 57.5817 102 62V66C102 70.4183 98.4183 74 94 74H88C79.1634 74 72 66.8366 72 58V42C72 37.5817 68.4183 34 64 34H60V24Z" fill="#0F8C82"/></svg>
+            </div>
+            <div class="chip dark">
+              <svg class="use" viewBox="0 0 122 122" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 30C24 24.4772 28.4772 20 34 20H40C48.8366 20 56 27.1634 56 36V50C56 54.4183 59.5817 58 64 58H74C82.8366 58 90 65.1634 90 74V92C90 97.5228 85.5228 102 80 102H72C66.4772 102 62 97.5228 62 92V76C62 71.5817 58.4183 68 54 68H46C37.1634 68 30 60.8366 30 52V36C30 32.6863 27.3137 30 24 30Z" fill="#FFFFFF"/><path d="M60 24H64C72.8366 24 80 31.1634 80 40V46C80 50.4183 83.5817 54 88 54H94C98.4183 54 102 57.5817 102 62V66C102 70.4183 98.4183 74 94 74H88C79.1634 74 72 66.8366 72 58V42C72 37.5817 68.4183 34 64 34H60V24Z" fill="#2563EB"/></svg>
+            </div>
+            <div class="chip small">
+              <svg class="use small" viewBox="0 0 122 122" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M28 30C28 24.4772 32.4772 20 38 20H42C50.8366 20 58 27.1634 58 36V50C58 54.4183 61.5817 58 66 58H74C82.8366 58 90 65.1634 90 74V90C90 95.5228 85.5228 100 80 100H74C68.4772 100 64 95.5228 64 90V76C64 71.5817 60.4183 68 56 68H48C39.1634 68 32 60.8366 32 52V36C32 32.6863 29.3137 30 26 30H28Z" fill="#0F1722"/></svg>
+            </div>
+          </div>
+          <p class="note">Best if favicon and app-icon performance matter most.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div>
+          <p class="eyebrow">Push 3</p>
+          <h2>Open Merge</h2>
+        </div>
+        <p class="summary">The merge remains visible, but the output side is more open and less block-like. This makes the mark feel lighter and more elegant.</p>
+        <div class="stage">
+          <div class="hero">
+            <svg class="hero-mark" viewBox="0 0 122 122" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M24 30C24 24.4772 28.4772 20 34 20H38C46.8366 20 54 27.1634 54 36V50C54 54.4183 57.5817 58 62 58H70C78.8366 58 86 65.1634 86 74V90H72V76C72 71.5817 68.4183 68 64 68H46C37.1634 68 30 60.8366 30 52V36C30 32.6863 27.3137 30 24 30Z" fill="#0F1722"/>
+              <path d="M58 24H62C70.8366 24 78 31.1634 78 40V46C78 50.4183 81.5817 54 86 54H94C98.4183 54 102 57.5817 102 62V68H88V62C88 57.5817 84.4183 54 80 54H74C65.1634 54 58 46.8366 58 38V24Z" fill="#0F8C82"/>
+            </svg>
+            <p>Most elegant and least blocky. It feels more like a brand gesture, but also slightly less authoritative than the stronger trunk versions.</p>
+          </div>
+          <div class="scale">
+            <div class="chip">
+              <svg class="use" viewBox="0 0 122 122" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 30C24 24.4772 28.4772 20 34 20H38C46.8366 20 54 27.1634 54 36V50C54 54.4183 57.5817 58 62 58H70C78.8366 58 86 65.1634 86 74V90H72V76C72 71.5817 68.4183 68 64 68H46C37.1634 68 30 60.8366 30 52V36C30 32.6863 27.3137 30 24 30Z" fill="#0F1722"/><path d="M58 24H62C70.8366 24 78 31.1634 78 40V46C78 50.4183 81.5817 54 86 54H94C98.4183 54 102 57.5817 102 62V68H88V62C88 57.5817 84.4183 54 80 54H74C65.1634 54 58 46.8366 58 38V24Z" fill="#0F8C82"/></svg>
+            </div>
+            <div class="chip dark">
+              <svg class="use" viewBox="0 0 122 122" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 30C24 24.4772 28.4772 20 34 20H38C46.8366 20 54 27.1634 54 36V50C54 54.4183 57.5817 58 62 58H70C78.8366 58 86 65.1634 86 74V90H72V76C72 71.5817 68.4183 68 64 68H46C37.1634 68 30 60.8366 30 52V36C30 32.6863 27.3137 30 24 30Z" fill="#FFFFFF"/><path d="M58 24H62C70.8366 24 78 31.1634 78 40V46C78 50.4183 81.5817 54 86 54H94C98.4183 54 102 57.5817 102 62V68H88V62C88 57.5817 84.4183 54 80 54H74C65.1634 54 58 46.8366 58 38V24Z" fill="#2563EB"/></svg>
+            </div>
+            <div class="chip small">
+              <svg class="use small" viewBox="0 0 122 122" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M28 30C28 24.4772 32.4772 20 38 20H40C48.8366 20 56 27.1634 56 36V50C56 54.4183 59.5817 58 64 58H70C78.8366 58 86 65.1634 86 74V88H72V76C72 71.5817 68.4183 68 64 68H48C39.1634 68 32 60.8366 32 52V36C32 32.6863 29.3137 30 26 30H28Z" fill="#0F1722"/></svg>
+            </div>
+          </div>
+          <p class="note">Best if elegance matters more than maximum solidity.</p>
+        </div>
+      </article>
+    </section>
+  </main>
+</body>
+</html>

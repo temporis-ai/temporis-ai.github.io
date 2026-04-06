@@ -169,9 +169,22 @@ Avoid:
 The logo should be simple, clean, and durable.
 
 ### Recommendation
-Start with a **wordmark-first identity**.
+Design a **two-part company identity system**:
 
-A symbol may be added, but it should be secondary at this stage.
+- a custom `Temporis` wordmark
+- a distinct `TS` company mark
+
+These should be designed together and feel like parts of the same brand system.
+
+### Reference practice
+Use companies like Anthropic as a reference for logo practice:
+
+- the company can have both a clean wordmark and a separate compact logo mark
+- restraint can create more trust than symbolic complexity
+- the website and product visuals can carry more narrative than the logo itself
+- the wordmark and logo mark should feel systemically related, not assembled from unrelated ideas
+
+Do not copy their logo style directly, but follow the principle that a serious AI company can build recognition through a disciplined wordmark plus a compact, memorable company mark.
 
 ### Desired logo qualities
 - readable at small sizes
@@ -180,8 +193,8 @@ A symbol may be added, but it should be secondary at this stage.
 - works in dark and light backgrounds
 - feels more like infrastructure/research than consumer lifestyle branding
 
-### Symbol direction if used
-If a symbol is used, it should be abstract and restrained.
+### Symbol direction
+The `TS` logo mark should be abstract and restrained.
 
 Possible concept directions:
 - temporal sequence
@@ -189,6 +202,11 @@ Possible concept directions:
 - layered horizon
 - time window
 - structured flow
+
+The mark should ideally carry both meanings:
+
+- `Temporis`
+- `time series`
 
 ### Avoid
 - clocks or literal stopwatch icons
@@ -198,8 +216,12 @@ Possible concept directions:
 - anything that looks like a trading signal service badge
 
 ### Practical guidance
-For v1, a polished wordmark may be enough.
-A symbol can be introduced only if it clearly improves recognition.
+For v1, the logo system should include both:
+
+- a polished `Temporis` wordmark for company-level branding
+- a polished `TS` mark for compact use, favicon, app icon, and social/avatar contexts
+
+The `TS` mark should not replace the wordmark, and the wordmark should not make the `TS` unnecessary. Each should have a clear job in the system.
 
 ---
 

@@ -609,7 +609,10 @@ No cinematic hero animation.
 ## 15. Logo Direction
 
 ### Recommendation
-Use a wordmark-first identity for v1.
+Use a two-part identity for v1:
+
+- a custom `Temporis` wordmark
+- a distinct `TS` logo mark
 
 ### Wordmark qualities
 - stable
@@ -617,7 +620,14 @@ Use a wordmark-first identity for v1.
 - works in one color
 - credible in both product and investor contexts
 
-### Optional symbol directions
+### `TS` mark qualities
+- simple enough for favicon and app-icon use
+- memorable in silhouette
+- abstract rather than literal
+- connected to time, sequence, or structured signal
+- compatible in tone with the wordmark
+
+### `TS` direction
 - layered horizon
 - time window
 - waveform restraint
@@ -763,7 +773,7 @@ Recommended order:
 
 1. Lock the company narrative and hero language.
 2. Lock the Vista / Platform split section.
-3. Choose wordmark direction and typography.
+3. Choose the `Temporis` wordmark and `TS` mark strategy together.
 4. Build the color and spacing system.
 5. Create Home, Vista, and Platform mockups first.
 6. Extend the same system to Collie, Company, and Contact.

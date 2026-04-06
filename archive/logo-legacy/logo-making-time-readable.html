@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temporis Making Time Readable</title>
+  <style>
+    :root {
+      --ink: #0f1722;
+      --slate: #4a5565;
+      --mist: #d7dfe6;
+      --white: #ffffff;
+      --cloud: #f7f9fb;
+      --blue: #2563eb;
+      --teal: #0f8c82;
+      --steel: #cbd6de;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 40px;
+      font-family: Inter, "Segoe UI", Arial, sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top left, rgba(15, 140, 130, 0.05), transparent 24%),
+        linear-gradient(180deg, #fbfcfe 0%, #f4f7fa 100%);
+    }
+    main {
+      max-width: 1360px;
+      margin: 0 auto;
+      display: grid;
+      gap: 28px;
+    }
+    h1 {
+      margin: 0;
+      font-size: 50px;
+      letter-spacing: -0.04em;
+    }
+    .lede {
+      margin: 0;
+      max-width: 84ch;
+      color: var(--slate);
+      line-height: 1.72;
+      font-size: 17px;
+    }
+    .principle {
+      padding: 24px 26px;
+      border-radius: 24px;
+      border: 1px solid rgba(15, 23, 34, 0.08);
+      background: rgba(255,255,255,0.93);
+      box-shadow: 0 20px 56px rgba(15,23,34,0.05);
+      display: grid;
+      gap: 10px;
+    }
+    .principle p {
+      margin: 0;
+      color: var(--slate);
+      line-height: 1.65;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 24px;
+    }
+    .card {
+      padding: 28px;
+      border-radius: 28px;
+      border: 1px solid rgba(15, 23, 34, 0.08);
+      background: rgba(255,255,255,0.93);
+      box-shadow: 0 22px 58px rgba(15,23,34,0.06);
+      display: grid;
+      gap: 20px;
+    }
+    .eyebrow {
+      margin: 0;
+      color: var(--slate);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+    h2 {
+      margin: 4px 0 0;
+      font-size: 28px;
+      letter-spacing: -0.03em;
+    }
+    .summary {
+      margin: 0;
+      color: var(--slate);
+      font-size: 15px;
+      line-height: 1.65;
+    }
+    .stage {
+      padding: 22px;
+      border-radius: 24px;
+      border: 1px solid rgba(15, 23, 34, 0.08);
+      background: linear-gradient(180deg, rgba(255,255,255,0.98), rgba(248,250,252,0.98));
+      display: grid;
+      gap: 18px;
+    }
+    .hero {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      min-height: 136px;
+    }
+    .hero p {
+      margin: 0;
+      color: var(--slate);
+      font-size: 14px;
+      line-height: 1.65;
+    }
+    .scale {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .chip {
+      width: 84px;
+      height: 84px;
+      border-radius: 22px;
+      border: 1px solid rgba(15,23,34,0.08);
+      background: var(--white);
+      display: grid;
+      place-items: center;
+    }
+    .chip.dark {
+      background: var(--ink);
+      border-color: rgba(255,255,255,0.08);
+    }
+    .chip.small {
+      width: 52px;
+      height: 52px;
+      border-radius: 16px;
+    }
+    .note {
+      margin: 0;
+      color: var(--slate);
+      font-size: 13px;
+      line-height: 1.6;
+    }
+    svg.hero-mark {
+      width: 122px;
+      height: 122px;
+      flex: 0 0 auto;
+    }
+    svg.use {
+      width: 56px;
+      height: 56px;
+    }
+    svg.use.small {
+      width: 30px;
+      height: 30px;
+    }
+    @media (max-width: 1180px) {
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Temporis: Making Time Readable</h1>
+      <p class="lede">This round starts from the company idea rather than from time motifs. If Temporis is about making time readable, then the mark should feel like ordering, resolving, clarifying, or indexing time. The symbol should not “look like time.” It should look like clarity applied to time.</p>
+    </header>
+
+    <section class="principle">
+      <p><strong>Brand center:</strong> Temporis makes time readable.</p>
+      <p><strong>Implication for form:</strong> the logo should suggest ordering, resolution, framing, indexing, or clarified signal.</p>
+      <p><strong>What to avoid:</strong> literal clocks, timeline branches, decorative futurism, mini dashboards.</p>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <div>
+          <p class="eyebrow">Direction P</p>
+          <h2>Resolver</h2>
+        </div>
+        <p class="summary">A broad uncertain field compressed into one clear terminal line. This is about resolution: many possibilities becoming one readable output.</p>
+        <div class="stage">
+          <div class="hero">
+            <svg class="hero-mark" viewBox="0 0 122 122" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M20 36C20 27.1634 27.1634 20 36 20H70C78.8366 20 86 27.1634 86 36V46C86 54.8366 78.8366 62 70 62H56C47.1634 62 40 69.1634 40 78V86C40 94.8366 47.1634 102 56 102H90V88H60C55.5817 88 52 84.4183 52 80C52 75.5817 55.5817 72 60 72H84C92.8366 72 100 79.1634 100 88V94C100 98.4183 96.4183 102 92 102H90" fill="#0F1722"/>
+              <rect x="88" y="94" width="16" height="8" rx="4" fill="#0F8C82"/>
+            </svg>
+            <p>Most directly tied to the brand claim. The mark is about reducing ambiguity into a usable line.</p>
+          </div>
+          <div class="scale">
+            <div class="chip">
+              <svg class="use" viewBox="0 0 122 122" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 36C20 27.1634 27.1634 20 36 20H70C78.8366 20 86 27.1634 86 36V46C86 54.8366 78.8366 62 70 62H56C47.1634 62 40 69.1634 40 78V86C40 94.8366 47.1634 102 56 102H90V88H60C55.5817 88 52 84.4183 52 80C52 75.5817 55.5817 72 60 72H84C92.8366 72 100 79.1634 100 88V94C100 98.4183 96.4183 102 92 102H90" fill="#0F1722"/><rect x="88" y="94" width="16" height="8" rx="4" fill="#0F8C82"/></svg>
+            </div>
+            <div class="chip dark">
+              <svg class="use" viewBox="0 0 122 122" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 36C20 27.1634 27.1634 20 36 20H70C78.8366 20 86 27.1634 86 36V46C86 54.8366 78.8366 62 70 62H56C47.1634 62 40 69.1634 40 78V86C40 94.8366 47.1634 102 56 102H90V88H60C55.5817 88 52 84.4183 52 80C52 75.5817 55.5817 72 60 72H84C92.8366 72 100 79.1634 100 88V94C100 98.4183 96.4183 102 92 102H90" fill="#FFFFFF"/><rect x="88" y="94" width="16" height="8" rx="4" fill="#2563EB"/></svg>
+            </div>
+            <div class="chip small">
+              <svg class="use small" viewBox="0 0 122 122" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22 36C22 27.1634 29.1634 20 38 20H68C76.8366 20 84 27.1634 84 36V44C84 52.8366 76.8366 60 68 60H56C49.3726 60 44 65.3726 44 72V80C44 86.6274 49.3726 92 56 92H88V80H62C57.5817 80 54 76.4183 54 72C54 67.5817 57.5817 64 62 64H82C88.6274 64 94 69.3726 94 76V88H84" fill="#0F1722"/></svg>
+            </div>
+          </div>
+          <p class="note">Strength: best direct link to the company. Risk: still slightly complex in the center turn.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div>
+          <p class="eyebrow">Direction Q</p>
+          <h2>Indexer</h2>
+        </div>
+        <p class="summary">A stable spine with two measured indicators. This is less about “time passing” and more about making time legible and indexed.</p>
+        <div class="stage">
+          <div class="hero">
+            <svg class="hero-mark" viewBox="0 0 122 122" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect x="54" y="20" width="18" height="82" rx="9" fill="#0F1722"/>
+              <rect x="30" y="34" width="34" height="12" rx="6" fill="#2563EB"/>
+              <rect x="58" y="72" width="34" height="12" rx="6" fill="#0F8C82"/>
+            </svg>
+            <p>Clean and editorial. The brand idea here is temporal indexing rather than prediction or motion.</p>
+          </div>
+          <div class="scale">
+            <div class="chip">
+              <svg class="use" viewBox="0 0 122 122" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="54" y="20" width="18" height="82" rx="9" fill="#0F1722"/><rect x="30" y="34" width="34" height="12" rx="6" fill="#2563EB"/><rect x="58" y="72" width="34" height="12" rx="6" fill="#0F8C82"/></svg>
+            </div>
+            <div class="chip dark">
+              <svg class="use" viewBox="0 0 122 122" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="54" y="20" width="18" height="82" rx="9" fill="#FFFFFF"/><rect x="30" y="34" width="34" height="12" rx="6" fill="#2563EB"/><rect x="58" y="72" width="34" height="12" rx="6" fill="#0F8C82"/></svg>
+            </div>
+            <div class="chip small">
+              <svg class="use small" viewBox="0 0 122 122" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="54" y="22" width="18" height="78" rx="9" fill="#0F1722"/><rect x="34" y="38" width="30" height="12" rx="6" fill="#2563EB"/><rect x="58" y="72" width="30" height="12" rx="6" fill="#0F8C82"/></svg>
+            </div>
+          </div>
+          <p class="note">Strength: very clear and calm. Risk: may be too generic unless the proportions become distinctive.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div>
+          <p class="eyebrow">Direction R</p>
+          <h2>Clarified Signal</h2>
+        </div>
+        <p class="summary">A broad band resolves into one narrow calibrated line. This is the simplest form of “making noisy time into readable signal.”</p>
+        <div class="stage">
+          <div class="hero">
+            <svg class="hero-mark" viewBox="0 0 122 122" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M20 76C20 67.1634 27.1634 60 36 60H74C82.8366 60 90 67.1634 90 76V82C90 86.4183 93.5817 90 98 90H102V102H94C85.1634 102 78 94.8366 78 86V80C78 75.5817 74.4183 72 70 72H36C27.1634 72 20 64.8366 20 56V46C20 37.1634 27.1634 30 36 30H84V42H40C35.5817 42 32 45.5817 32 50C32 54.4183 35.5817 58 40 58H74" fill="#0F1722"/>
+              <rect x="90" y="90" width="12" height="8" rx="4" fill="#0F8C82"/>
+            </svg>
+            <p>This may be the cleanest brand-to-form translation in the set. It is about signal becoming legible, not time being illustrated.</p>
+          </div>
+          <div class="scale">
+            <div class="chip">
+              <svg class="use" viewBox="0 0 122 122" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 76C20 67.1634 27.1634 60 36 60H74C82.8366 60 90 67.1634 90 76V82C90 86.4183 93.5817 90 98 90H102V102H94C85.1634 102 78 94.8366 78 86V80C78 75.5817 74.4183 72 70 72H36C27.1634 72 20 64.8366 20 56V46C20 37.1634 27.1634 30 36 30H84V42H40C35.5817 42 32 45.5817 32 50C32 54.4183 35.5817 58 40 58H74" fill="#0F1722"/><rect x="90" y="90" width="12" height="8" rx="4" fill="#0F8C82"/></svg>
+            </div>
+            <div class="chip dark">
+              <svg class="use" viewBox="0 0 122 122" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 76C20 67.1634 27.1634 60 36 60H74C82.8366 60 90 67.1634 90 76V82C90 86.4183 93.5817 90 98 90H102V102H94C85.1634 102 78 94.8366 78 86V80C78 75.5817 74.4183 72 70 72H36C27.1634 72 20 64.8366 20 56V46C20 37.1634 27.1634 30 36 30H84V42H40C35.5817 42 32 45.5817 32 50C32 54.4183 35.5817 58 40 58H74" fill="#FFFFFF"/><rect x="90" y="90" width="12" height="8" rx="4" fill="#2563EB"/></svg>
+            </div>
+            <div class="chip small">
+              <svg class="use small" viewBox="0 0 122 122" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22 74C22 65.1634 29.1634 58 38 58H72C78.6274 58 84 63.3726 84 70V78C84 84.6274 89.3726 90 96 90H100V100H94C85.1634 100 78 92.8366 78 84V76C78 71.5817 74.4183 68 70 68H38C29.1634 68 22 60.8366 22 52V48C22 39.1634 29.1634 32 38 32H80V44H42C37.5817 44 34 47.5817 34 52C34 56.4183 37.5817 60 42 60H72" fill="#0F1722"/></svg>
+            </div>
+          </div>
+          <p class="note">Strength: strongest connection to the company claim. Risk: still a touch intricate in the turn.</p>
+        </div>
+      </article>
+    </section>
+  </main>
+</body>
+</html>

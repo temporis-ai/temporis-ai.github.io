@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temporis More Ideas</title>
+  <style>
+    :root {
+      --ink: #0f1722;
+      --slate: #4a5565;
+      --mist: #d7dfe6;
+      --white: #ffffff;
+      --cloud: #f7f9fb;
+      --blue: #2563eb;
+      --teal: #0f8c82;
+      --steel: #cbd6de;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 40px;
+      font-family: Inter, "Segoe UI", Arial, sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top left, rgba(37, 99, 235, 0.05), transparent 24%),
+        linear-gradient(180deg, #fbfcfe 0%, #f4f7fa 100%);
+    }
+    main {
+      max-width: 1380px;
+      margin: 0 auto;
+      display: grid;
+      gap: 28px;
+    }
+    h1 {
+      margin: 0;
+      font-size: 50px;
+      letter-spacing: -0.04em;
+    }
+    .lede {
+      margin: 0;
+      max-width: 84ch;
+      color: var(--slate);
+      line-height: 1.72;
+      font-size: 17px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 24px;
+    }
+    .card {
+      padding: 28px;
+      border-radius: 28px;
+      border: 1px solid rgba(15, 23, 34, 0.08);
+      background: rgba(255,255,255,0.93);
+      box-shadow: 0 22px 58px rgba(15,23,34,0.06);
+      display: grid;
+      gap: 20px;
+    }
+    .eyebrow {
+      margin: 0;
+      color: var(--slate);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+    h2 {
+      margin: 4px 0 0;
+      font-size: 28px;
+      letter-spacing: -0.03em;
+    }
+    .summary {
+      margin: 0;
+      color: var(--slate);
+      font-size: 15px;
+      line-height: 1.65;
+    }
+    .stage {
+      padding: 22px;
+      border-radius: 24px;
+      border: 1px solid rgba(15, 23, 34, 0.08);
+      background: linear-gradient(180deg, rgba(255,255,255,0.98), rgba(248,250,252,0.98));
+      display: grid;
+      gap: 18px;
+    }
+    .hero {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      min-height: 136px;
+    }
+    .hero p {
+      margin: 0;
+      color: var(--slate);
+      font-size: 14px;
+      line-height: 1.65;
+    }
+    .scale {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .chip {
+      width: 84px;
+      height: 84px;
+      border-radius: 22px;
+      border: 1px solid rgba(15,23,34,0.08);
+      background: var(--white);
+      display: grid;
+      place-items: center;
+    }
+    .chip.dark {
+      background: var(--ink);
+      border-color: rgba(255,255,255,0.08);
+    }
+    .chip.small {
+      width: 52px;
+      height: 52px;
+      border-radius: 16px;
+    }
+    .note {
+      margin: 0;
+      color: var(--slate);
+      font-size: 13px;
+      line-height: 1.6;
+    }
+    svg.hero-mark {
+      width: 122px;
+      height: 122px;
+      flex: 0 0 auto;
+    }
+    svg.use {
+      width: 56px;
+      height: 56px;
+    }
+    svg.use.small {
+      width: 30px;
+      height: 30px;
+    }
+    @media (max-width: 1180px) {
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Temporis More Ideas</h1>
+      <p class="lede">This round explores new visual grammars while keeping the same principles: one strong move, small-size clarity, and a defensible link to time series. None of these are mini dashboards or boxed charts. Each is trying to create recognition through a different kind of cadence.</p>
+    </header>
+
+    <section class="grid">
+      <article class="card">
+        <div>
+          <p class="eyebrow">Direction D</p>
+          <h2>Stepped Pair</h2>
+        </div>
+        <p class="summary">Two intervals become two stacked steps with a shared corner. It is still a pair, but now the silhouette itself carries progression.</p>
+        <div class="stage">
+          <div class="hero">
+            <svg class="hero-mark" viewBox="0 0 122 122" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M20 84C20 77.3726 25.3726 72 32 72H56V48C56 41.3726 61.3726 36 68 36H92V52C92 58.6274 86.6274 64 80 64H66V88C66 94.6274 60.6274 100 54 100H20V84Z" fill="#0F1722"/>
+              <rect x="72" y="36" width="28" height="12" rx="6" fill="#2563EB"/>
+              <rect x="38" y="88" width="26" height="12" rx="6" fill="#0F8C82"/>
+            </svg>
+            <p>Progression is built into the outer form. This could be more ownable than bars, but still calm enough for a technical brand.</p>
+          </div>
+          <div class="scale">
+            <div class="chip">
+              <svg class="use" viewBox="0 0 122 122" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 84C20 77.3726 25.3726 72 32 72H56V48C56 41.3726 61.3726 36 68 36H92V52C92 58.6274 86.6274 64 80 64H66V88C66 94.6274 60.6274 100 54 100H20V84Z" fill="#0F1722"/><rect x="72" y="36" width="28" height="12" rx="6" fill="#2563EB"/><rect x="38" y="88" width="26" height="12" rx="6" fill="#0F8C82"/></svg>
+            </div>
+            <div class="chip dark">
+              <svg class="use" viewBox="0 0 122 122" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 84C20 77.3726 25.3726 72 32 72H56V48C56 41.3726 61.3726 36 68 36H92V52C92 58.6274 86.6274 64 80 64H66V88C66 94.6274 60.6274 100 54 100H20V84Z" fill="#FFFFFF"/><rect x="72" y="36" width="28" height="12" rx="6" fill="#2563EB"/><rect x="38" y="88" width="26" height="12" rx="6" fill="#0F8C82"/></svg>
+            </div>
+            <div class="chip small">
+              <svg class="use small" viewBox="0 0 122 122" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 84C20 77.3726 25.3726 72 32 72H56V48C56 41.3726 61.3726 36 68 36H92V52C92 58.6274 86.6274 64 80 64H66V88C66 94.6274 60.6274 100 54 100H20V84Z" fill="#0F1722"/></svg>
+            </div>
+          </div>
+          <p class="note">Potentially more memorable than the current V1 family. Risk: can feel a bit assertive.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div>
+          <p class="eyebrow">Direction E</p>
+          <h2>Nested Shift</h2>
+        </div>
+        <p class="summary">A larger outer interval contains a smaller shifted one. Time series becomes nested change rather than two separate bars.</p>
+        <div class="stage">
+          <div class="hero">
+            <svg class="hero-mark" viewBox="0 0 122 122" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect x="20" y="64" width="82" height="18" rx="9" fill="#0F1722"/>
+              <rect x="42" y="40" width="48" height="18" rx="9" fill="#0F8C82"/>
+              <rect x="32" y="30" width="18" height="10" rx="5" fill="#2563EB"/>
+            </svg>
+            <p>Less like two independent marks and more like one system with internal movement. It may be a better metaphor for series within series.</p>
+          </div>
+          <div class="scale">
+            <div class="chip">
+              <svg class="use" viewBox="0 0 122 122" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="20" y="64" width="82" height="18" rx="9" fill="#0F1722"/><rect x="42" y="40" width="48" height="18" rx="9" fill="#0F8C82"/><rect x="32" y="30" width="18" height="10" rx="5" fill="#2563EB"/></svg>
+            </div>
+            <div class="chip dark">
+              <svg class="use" viewBox="0 0 122 122" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="20" y="64" width="82" height="18" rx="9" fill="#FFFFFF"/><rect x="42" y="40" width="48" height="18" rx="9" fill="#0F8C82"/><rect x="32" y="30" width="18" height="10" rx="5" fill="#2563EB"/></svg>
+            </div>
+            <div class="chip small">
+              <svg class="use small" viewBox="0 0 122 122" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="22" y="66" width="78" height="18" rx="9" fill="#0F1722"/><rect x="44" y="42" width="44" height="18" rx="9" fill="#0F8C82"/></svg>
+            </div>
+          </div>
+          <p class="note">Calmer than the stepped approach. Risk: may not separate enough from generic signal graphics.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div>
+          <p class="eyebrow">Direction F</p>
+          <h2>Pulse Block</h2>
+        </div>
+        <p class="summary">A single block interrupted by one shorter block. This treats time series as a cadence of measured durations instead of lines or steps.</p>
+        <div class="stage">
+          <div class="hero">
+            <svg class="hero-mark" viewBox="0 0 122 122" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect x="18" y="58" width="86" height="24" rx="12" fill="#0F1722"/>
+              <rect x="34" y="34" width="34" height="16" rx="8" fill="#0F8C82"/>
+            </svg>
+            <p>Very reduced, very strong at small sizes. The brand cue comes from duration contrast rather than from framing or stacked sequence.</p>
+          </div>
+          <div class="scale">
+            <div class="chip">
+              <svg class="use" viewBox="0 0 122 122" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="18" y="58" width="86" height="24" rx="12" fill="#0F1722"/><rect x="34" y="34" width="34" height="16" rx="8" fill="#0F8C82"/></svg>
+            </div>
+            <div class="chip dark">
+              <svg class="use" viewBox="0 0 122 122" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="18" y="58" width="86" height="24" rx="12" fill="#FFFFFF"/><rect x="34" y="34" width="34" height="16" rx="8" fill="#2563EB"/></svg>
+            </div>
+            <div class="chip small">
+              <svg class="use small" viewBox="0 0 122 122" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="20" y="60" width="82" height="22" rx="11" fill="#0F1722"/><rect x="36" y="38" width="30" height="16" rx="8" fill="#0F8C82"/></svg>
+            </div>
+          </div>
+          <p class="note">Strong reduction and good recall potential. Risk: the link to time series is less obvious, more interpretive.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div>
+          <p class="eyebrow">Direction G</p>
+          <h2>Phase Mark</h2>
+        </div>
+        <p class="summary">Two horizontal intervals plus one vertical phase shift. This tries to represent time series as change in state rather than just length difference.</p>
+        <div class="stage">
+          <div class="hero">
+            <svg class="hero-mark" viewBox="0 0 122 122" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect x="24" y="70" width="60" height="16" rx="8" fill="#0F1722"/>
+              <rect x="64" y="34" width="16" height="52" rx="8" fill="#2563EB"/>
+              <rect x="48" y="34" width="44" height="14" rx="7" fill="#0F8C82"/>
+            </svg>
+            <p>This is the most unusual idea in the set. It uses a phase change instead of simple parallel comparison, which may create a stronger memory hook.</p>
+          </div>
+          <div class="scale">
+            <div class="chip">
+              <svg class="use" viewBox="0 0 122 122" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="24" y="70" width="60" height="16" rx="8" fill="#0F1722"/><rect x="64" y="34" width="16" height="52" rx="8" fill="#2563EB"/><rect x="48" y="34" width="44" height="14" rx="7" fill="#0F8C82"/></svg>
+            </div>
+            <div class="chip dark">
+              <svg class="use" viewBox="0 0 122 122" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="24" y="70" width="60" height="16" rx="8" fill="#FFFFFF"/><rect x="64" y="34" width="16" height="52" rx="8" fill="#2563EB"/><rect x="48" y="34" width="44" height="14" rx="7" fill="#0F8C82"/></svg>
+            </div>
+            <div class="chip small">
+              <svg class="use small" viewBox="0 0 122 122" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="26" y="72" width="56" height="16" rx="8" fill="#0F1722"/><rect x="64" y="38" width="16" height="48" rx="8" fill="#2563EB"/></svg>
+            </div>
+          </div>
+          <p class="note">Could become the most ownable. Risk: it is also the least immediately obvious.</p>
+        </div>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
