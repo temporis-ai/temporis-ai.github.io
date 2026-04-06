@@ -1,0 +1,19 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="appBg" x1="18" y1="10" x2="104" y2="106" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#143A62"/>
+      <stop offset="1" stop-color="#081A2E"/>
+    </linearGradient>
+    <linearGradient id="appWave" x1="24" y1="90" x2="104" y2="28" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#67D0F6"/>
+      <stop offset="1" stop-color="#35BDF0"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="116" height="116" rx="25" fill="url(#appBg)"/>
+  <rect x="2.5" y="2.5" width="115" height="115" rx="24.5" stroke="rgba(255,255,255,0.22)"/>
+  <g transform="translate(8 8) scale(0.22)">
+    <path d="M50 27H244V63H170V272H124V63H50V27Z" fill="#F3F7FB"/>
+    <path d="M410 56C395 47 378 43 358 44C323 46 296 67 296 95C296 122 323 143 358 147C393 151 418 173 418 200C418 227 393 249 358 252C334 255 312 251 291 243" stroke="#F3F7FB" stroke-width="40" stroke-linecap="butt" stroke-linejoin="miter"/>
+    <path d="M138 252L220 174C236 158 252 174 259 188C266 202 282 226 298 210L434 78" stroke="url(#appWave)" stroke-width="18" stroke-linecap="square" stroke-linejoin="round"/>
+  </g>
+</svg>

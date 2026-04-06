@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temporis Concept 04 - Signal Slash TS</title>
+  <style>
+    :root {
+      --ink: #0f1722;
+      --slate: #4a5565;
+      --white: #ffffff;
+      --blue: #2bb3e6;
+      --cloud: #f7f9fb;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, "Segoe UI", Arial, sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top left, rgba(43, 179, 230, 0.06), transparent 28%),
+        linear-gradient(180deg, #fcfdfe 0%, #f2f5f8 100%);
+    }
+    main {
+      max-width: 1220px;
+      margin: 0 auto;
+      padding: 44px 24px 80px;
+      display: grid;
+      gap: 24px;
+    }
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .back {
+      color: var(--slate);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .eyebrow {
+      margin: 0;
+      color: var(--blue);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 0;
+      font-size: clamp(38px, 6vw, 72px);
+      letter-spacing: -0.05em;
+      line-height: 0.96;
+    }
+    .lede {
+      margin: 0;
+      max-width: 78ch;
+      color: var(--slate);
+      line-height: 1.72;
+      font-size: 17px;
+    }
+    .hero, .panel {
+      padding: 28px;
+      border-radius: 30px;
+      background: rgba(255, 255, 255, 0.9);
+      border: 1px solid rgba(15, 23, 34, 0.08);
+      box-shadow: 0 24px 60px rgba(15, 23, 34, 0.06);
+    }
+    .hero-stage {
+      min-height: 280px;
+      border-radius: 26px;
+      background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+      border: 1px solid rgba(15, 23, 34, 0.08);
+      display: grid;
+      place-items: center;
+      padding: 28px;
+    }
+    .master-lockup {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .wordmark {
+      font-size: clamp(66px, 8vw, 114px);
+      font-weight: 800;
+      letter-spacing: 0.03em;
+      line-height: 0.9;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 20px;
+    }
+    .test-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+    .test {
+      border-radius: 24px;
+      padding: 22px;
+      min-height: 190px;
+      border: 1px solid rgba(15, 23, 34, 0.08);
+      background: var(--white);
+      display: grid;
+      align-content: space-between;
+      gap: 18px;
+    }
+    .test.dark {
+      background: var(--ink);
+      color: var(--white);
+      border-color: rgba(255,255,255,0.08);
+    }
+    .label {
+      margin: 0;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--slate);
+    }
+    .dark .label {
+      color: rgba(255,255,255,0.72);
+    }
+    .notes {
+      margin: 0;
+      padding-left: 18px;
+      color: var(--slate);
+      line-height: 1.65;
+    }
+    .dark-note {
+      color: rgba(255,255,255,0.72);
+    }
+    svg { display: block; max-width: 100%; }
+    @media (max-width: 980px) {
+      .grid, .test-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="topbar">
+      <a class="back" href="index.html">← Back to overview</a>
+      <p class="eyebrow">Concept 04 / Signal Slash TS</p>
+    </div>
+
+    <header>
+      <h1>Signal Slash TS</h1>
+      <p class="lede">This direction follows the structure in `Gemini.png` much more directly: a clear `TS` monogram, with a single time-series stroke slicing through it. The goal here is not hidden abstraction. It is a direct, memorable monogram with one strong motion cue.</p>
+    </header>
+
+    <section class="hero">
+      <div class="hero-stage">
+        <div class="master-lockup" aria-label="Signal Slash TS lockup">
+          <svg width="126" height="144" viewBox="0 0 86 86" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M13 20C13 16.6863 15.6863 14 19 14H56V24H43V70H31V24H19C15.6863 24 13 21.3137 13 18V20Z" fill="#0F1722"/>
+            <path d="M56 18C66.4934 18 75 26.5066 75 37C75 43.0991 72.1221 48.5261 67.6484 52V52.0156C71.5584 55.2167 74 60.0813 74 65.5156C74 75.1719 66.1719 83 56.5156 83H34V71H55.5C58.5376 71 61 68.5376 61 65.5C61 62.4624 58.5376 60 55.5 60H48V49H54C60.0751 49 65 44.0751 65 38C65 31.9249 60.0751 27 54 27H42V18H56Z" fill="#0F1722"/>
+            <path d="M15 60L31.5 43.5C35.366 39.634 41.634 39.634 45.5 43.5C49.366 47.366 55.634 47.366 59.5 43.5L76 27" stroke="#2BB3E6" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <div class="wordmark">TEMPORIS</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid">
+      <article class="panel">
+        <p class="label">Why It Works</p>
+        <ul class="notes">
+          <li>The `TS` reading is immediate.</li>
+          <li>The wave stroke ties the monogram directly to time series without extra symbols.</li>
+          <li>The silhouette is bold and memorable.</li>
+          <li>This is the closest translation of the `Gemini.png` reference.</li>
+        </ul>
+      </article>
+
+      <article class="panel">
+        <p class="label">Risk</p>
+        <ul class="notes">
+          <li>This is less restrained than the abstract directions.</li>
+          <li>If over-refined, it could drift toward software-company logo cliché.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="test-grid">
+      <article class="test">
+        <p class="label">One-Color Mark</p>
+        <svg width="92" height="92" viewBox="0 0 86 86" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M13 20C13 16.6863 15.6863 14 19 14H56V24H43V70H31V24H19C15.6863 24 13 21.3137 13 18V20Z" fill="#0F1722"/>
+          <path d="M56 18C66.4934 18 75 26.5066 75 37C75 43.0991 72.1221 48.5261 67.6484 52V52.0156C71.5584 55.2167 74 60.0813 74 65.5156C74 75.1719 66.1719 83 56.5156 83H34V71H55.5C58.5376 71 61 68.5376 61 65.5C61 62.4624 58.5376 60 55.5 60H48V49H54C60.0751 49 65 44.0751 65 38C65 31.9249 60.0751 27 54 27H42V18H56Z" fill="#0F1722"/>
+          <path d="M15 60L31.5 43.5C35.366 39.634 41.634 39.634 45.5 43.5C49.366 47.366 55.634 47.366 59.5 43.5L76 27" stroke="#0F1722" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <p class="notes">The concept still holds in one color, which is important.</p>
+      </article>
+
+      <article class="test dark">
+        <p class="label">Dark Surface</p>
+        <svg width="92" height="92" viewBox="0 0 86 86" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M13 20C13 16.6863 15.6863 14 19 14H56V24H43V70H31V24H19C15.6863 24 13 21.3137 13 18V20Z" fill="#FFFFFF"/>
+          <path d="M56 18C66.4934 18 75 26.5066 75 37C75 43.0991 72.1221 48.5261 67.6484 52V52.0156C71.5584 55.2167 74 60.0813 74 65.5156C74 75.1719 66.1719 83 56.5156 83H34V71H55.5C58.5376 71 61 68.5376 61 65.5C61 62.4624 58.5376 60 55.5 60H48V49H54C60.0751 49 65 44.0751 65 38C65 31.9249 60.0751 27 54 27H42V18H56Z" fill="#FFFFFF"/>
+          <path d="M15 60L31.5 43.5C35.366 39.634 41.634 39.634 45.5 43.5C49.366 47.366 55.634 47.366 59.5 43.5L76 27" stroke="#2BB3E6" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <p class="notes dark-note">The slash line keeps the mark alive on dark surfaces.</p>
+      </article>
+
+      <article class="test">
+        <p class="label">App Icon Crop</p>
+        <svg width="92" height="92" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect width="96" height="96" rx="26" fill="#0F1722"/>
+          <path d="M17 24C17 20.6863 19.6863 18 23 18H58V28H47V76H35V28H23C19.6863 28 17 25.3137 17 22V24Z" fill="#FFFFFF"/>
+          <path d="M58 22C68.4934 22 77 30.5066 77 41C77 47.0991 74.1221 52.5261 69.6484 56V56.0156C73.5584 59.2167 76 64.0813 76 69.5156C76 79.1719 68.1719 87 58.5156 87H38V75H57.5C60.5376 75 63 72.5376 63 69.5C63 66.4624 60.5376 64 57.5 64H50V53H56C62.0751 53 67 48.0751 67 42C67 35.9249 62.0751 31 56 31H46V22H58Z" fill="#FFFFFF"/>
+          <path d="M18 66L33 51C36.3137 47.6863 41.6863 47.6863 45 51C48.3137 54.3137 53.6863 54.3137 57 51L74 34" stroke="#2BB3E6" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <p class="notes">Best if you want a direct, branded monogram instead of a quieter abstract symbol.</p>
+      </article>
+    </section>
+  </main>
+</body>
+</html>

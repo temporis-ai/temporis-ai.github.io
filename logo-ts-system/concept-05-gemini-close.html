@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temporis Concept 05 - Gemini Close</title>
+  <style>
+    :root {
+      --ink: #103963;
+      --ink-deep: #0b2746;
+      --mid: #1b6d9a;
+      --cyan: #39c2f2;
+      --cyan-soft: #67d0f6;
+      --white: #ffffff;
+      --slate: #4a5565;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, "Segoe UI", Arial, sans-serif;
+      color: var(--ink-deep);
+      background:
+        radial-gradient(circle at top left, rgba(51, 194, 242, 0.08), transparent 26%),
+        linear-gradient(180deg, #fcfdfe 0%, #f2f5f8 100%);
+    }
+    main {
+      max-width: 1220px;
+      margin: 0 auto;
+      padding: 44px 24px 80px;
+      display: grid;
+      gap: 24px;
+    }
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .back {
+      color: var(--slate);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .eyebrow {
+      margin: 0;
+      color: var(--cyan);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 0;
+      font-size: clamp(38px, 6vw, 72px);
+      letter-spacing: -0.05em;
+      line-height: 0.96;
+    }
+    .lede {
+      margin: 0;
+      max-width: 78ch;
+      color: var(--slate);
+      line-height: 1.72;
+      font-size: 17px;
+    }
+    .hero, .panel {
+      padding: 28px;
+      border-radius: 30px;
+      background: rgba(255, 255, 255, 0.9);
+      border: 1px solid rgba(15, 23, 34, 0.08);
+      box-shadow: 0 24px 60px rgba(15, 23, 34, 0.06);
+    }
+    .hero-stage {
+      min-height: 300px;
+      border-radius: 26px;
+      background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+      border: 1px solid rgba(15, 23, 34, 0.08);
+      display: grid;
+      place-items: center;
+      padding: 28px;
+    }
+    .master-lockup {
+      display: grid;
+      justify-items: center;
+      gap: 12px;
+    }
+    .wordmark {
+      font-size: clamp(58px, 7vw, 92px);
+      font-weight: 800;
+      letter-spacing: -0.055em;
+      line-height: 0.9;
+      color: var(--ink);
+    }
+    .subline {
+      font-size: clamp(16px, 2vw, 24px);
+      color: #29456d;
+      letter-spacing: -0.03em;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 20px;
+    }
+    .test-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+    .test {
+      border-radius: 24px;
+      padding: 22px;
+      min-height: 190px;
+      border: 1px solid rgba(15, 23, 34, 0.08);
+      background: var(--white);
+      display: grid;
+      align-content: space-between;
+      gap: 18px;
+    }
+    .test.dark {
+      background: var(--ink-deep);
+      color: var(--white);
+      border-color: rgba(255,255,255,0.08);
+    }
+    .label {
+      margin: 0;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--slate);
+    }
+    .dark .label {
+      color: rgba(255,255,255,0.72);
+    }
+    .notes {
+      margin: 0;
+      padding-left: 18px;
+      color: var(--slate);
+      line-height: 1.65;
+    }
+    .dark-note {
+      color: rgba(255,255,255,0.72);
+    }
+    svg { display: block; max-width: 100%; }
+    .logo-image {
+      display: block;
+      width: min(100%, 420px);
+      height: auto;
+    }
+    .logo-image.small {
+      width: 120px;
+    }
+    .preview-stage {
+      width: 120px;
+      height: 120px;
+      display: grid;
+      place-items: center;
+      margin: 0 auto;
+    }
+    .preview-stage .logo-image.small {
+      width: 120px;
+      height: 120px;
+      object-fit: contain;
+      object-position: center;
+    }
+    .icon-tile {
+      width: 120px;
+      height: 120px;
+      display: grid;
+      place-items: center;
+    }
+    .icon-tile .logo-image {
+      width: 100%;
+      max-width: 96px;
+      border-radius: 22px;
+      box-shadow: 0 18px 32px rgba(2, 10, 22, 0.34);
+      object-fit: contain;
+      object-position: center;
+    }
+    @media (max-width: 980px) {
+      .grid, .test-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="topbar">
+      <a class="back" href="index.html">← Back to overview</a>
+      <p class="eyebrow">Concept 05 / Gemini Close</p>
+    </div>
+
+    <header>
+      <h1>Gemini Close</h1>
+      <p class="lede">This pass is a much closer reconstruction of the PNG itself: a fused `TS` monogram block with a cyan diagonal signal path threading directly through it, plus the stacked `Temporis` lockup underneath.</p>
+    </header>
+
+    <section class="hero">
+      <div class="hero-stage">
+        <div class="master-lockup">
+          <img class="logo-image" src="ts-reference-light.svg" alt="TS monogram as SVG aligned to logo.png">
+          <div class="wordmark">Temporis</div>
+          <div class="subline">Time Series Solutions</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid">
+      <article class="panel">
+        <p class="label">Why It Works</p>
+        <ul class="notes">
+          <li>This now follows the PNG structure much more literally.</li>
+          <li>The `TS` is one fused monogram block instead of two separate ideas.</li>
+          <li>The diagonal cyan signal is threaded through the monogram in the same way as the reference.</li>
+          <li>The stacked wordmark and subline now match the reference layout more closely.</li>
+        </ul>
+      </article>
+
+      <article class="panel">
+        <p class="label">Risk</p>
+        <ul class="notes">
+          <li>This is very close to the reference, so it is less original than the other directions.</li>
+          <li>The diagonal stroke can dominate if the line gets any heavier.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="test-grid">
+      <article class="test">
+        <p class="label">Monogram Only</p>
+        <div class="preview-stage">
+          <img class="logo-image small" src="ts-reference-light.svg" alt="TS monogram SVG preview">
+        </div>
+        <p class="notes">SVG reconstruction aligned to [logo.png](/Users/yijiang/Documents/temporis-ai.github.io/logo.png).</p>
+      </article>
+
+      <article class="test dark">
+        <p class="label">Dark Surface</p>
+        <div class="icon-tile">
+          <img class="logo-image" src="ts-reference-app.svg" alt="TS monogram app icon SVG preview">
+        </div>
+        <p class="notes dark-note">Dark-surface SVG version aligned to the treatment in [app.png](/Users/yijiang/Documents/temporis-ai.github.io/app.png).</p>
+      </article>
+
+      <article class="test">
+        <p class="label">One-Color Version</p>
+        <div class="preview-stage">
+          <img class="logo-image small" src="ts-reference-mono.svg" alt="TS monogram one-color SVG">
+        </div>
+        <p class="notes">Vector one-color reduction from the same geometry.</p>
+      </article>
+    </section>
+  </main>
+</body>
+</html>

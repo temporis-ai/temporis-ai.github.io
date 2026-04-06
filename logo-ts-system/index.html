@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temporis TS Logo System</title>
+  <style>
+    :root {
+      --ink: #0f1722;
+      --slate: #4a5565;
+      --mist: #d7dfe6;
+      --cloud: #f7f9fb;
+      --white: #ffffff;
+      --blue: #2563eb;
+      --teal: #0f8c82;
+      --sand: #f4efe6;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, "Segoe UI", Arial, sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top left, rgba(37, 99, 235, 0.05), transparent 30%),
+        linear-gradient(180deg, #fcfdfd 0%, #f4f7fa 100%);
+    }
+    main {
+      max-width: 1220px;
+      margin: 0 auto;
+      padding: 48px 24px 72px;
+      display: grid;
+      gap: 28px;
+    }
+    header {
+      display: grid;
+      gap: 14px;
+      max-width: 860px;
+    }
+    h1 {
+      margin: 0;
+      font-size: clamp(42px, 7vw, 72px);
+      letter-spacing: -0.05em;
+      line-height: 0.96;
+    }
+    .eyebrow {
+      margin: 0;
+      color: var(--blue);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+    .lede {
+      margin: 0;
+      color: var(--slate);
+      line-height: 1.72;
+      font-size: 17px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 20px;
+    }
+    .card {
+      padding: 26px;
+      border-radius: 28px;
+      background: rgba(255, 255, 255, 0.9);
+      border: 1px solid rgba(15, 23, 34, 0.08);
+      box-shadow: 0 24px 60px rgba(15, 23, 34, 0.07);
+      display: grid;
+      gap: 18px;
+    }
+    .card h2 {
+      margin: 0;
+      font-size: 26px;
+      letter-spacing: -0.04em;
+    }
+    .meta {
+      margin: 0;
+      color: var(--slate);
+      line-height: 1.65;
+      font-size: 15px;
+    }
+    .sample {
+      min-height: 180px;
+      border-radius: 24px;
+      padding: 22px;
+      border: 1px solid rgba(15, 23, 34, 0.08);
+      background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+      display: grid;
+      align-content: center;
+      gap: 18px;
+    }
+    .mark-row {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+    .wordmark {
+      font-weight: 800;
+      color: var(--ink);
+      text-transform: uppercase;
+      line-height: 0.9;
+      white-space: nowrap;
+    }
+    .wordmark--axis {
+      font-size: 32px;
+      letter-spacing: 0.08em;
+    }
+    .wordmark--interval {
+      font-size: 32px;
+      letter-spacing: 0.08em;
+    }
+    .wordmark--interval .tempo {
+      letter-spacing: 0.01em;
+    }
+    .wordmark--interval .ris {
+      letter-spacing: 0.12em;
+    }
+    .wordmark--interval .o {
+      display: inline-block;
+      transform: translateY(-0.02em) scale(0.94);
+    }
+    .wordmark--interval .i {
+      display: inline-block;
+      transform: scaleX(0.84);
+    }
+    .wordmark--signal {
+      font-size: 32px;
+      letter-spacing: 0.06em;
+    }
+    .wordmark .wide {
+      letter-spacing: 0.14em;
+    }
+    .wordmark .tight {
+      letter-spacing: 0.02em;
+    }
+    .chip-row {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .chip {
+      width: 56px;
+      height: 56px;
+      border-radius: 16px;
+      border: 1px solid rgba(15, 23, 34, 0.08);
+      background: var(--white);
+      display: grid;
+      place-items: center;
+    }
+    .chip.dark {
+      background: var(--ink);
+      border-color: rgba(255,255,255,0.08);
+    }
+    .tag {
+      display: inline-flex;
+      width: fit-content;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(37, 99, 235, 0.08);
+      color: var(--blue);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    ul {
+      margin: 0;
+      padding-left: 18px;
+      color: var(--slate);
+      line-height: 1.6;
+    }
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+    .link {
+      display: inline-flex;
+      width: fit-content;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 16px;
+      border-radius: 14px;
+      background: var(--ink);
+      color: var(--white);
+      font-weight: 600;
+    }
+    .footer-note {
+      color: var(--slate);
+      font-size: 14px;
+    }
+    svg { display: block; }
+    @media (max-width: 1040px) {
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <p class="eyebrow">Temporis Identity System</p>
+      <h1>Fresh `TS` concepts for a calm, memorable company brand.</h1>
+      <p class="lede">These directions respond to the latest feedback: no messy overlapped initials. The new set treats `TS` as hidden structure and aims for a cleaner, more AI-native abstract mark beside a disciplined `Temporis` wordmark.</p>
+    </header>
+
+    <section class="grid">
+      <article class="card">
+        <div>
+          <p class="tag">Concept 01</p>
+          <h2>Kernel Node</h2>
+        </div>
+        <div class="sample">
+          <div class="mark-row">
+            <svg width="74" height="74" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect x="29" y="12" width="16" height="50" rx="8" fill="#0F1722"/>
+              <rect x="17" y="12" width="40" height="12" rx="6" fill="#0F1722"/>
+              <circle cx="21" cy="28" r="6" fill="#2563EB"/>
+              <circle cx="53" cy="28" r="6" fill="#2563EB"/>
+              <circle cx="53" cy="46" r="6" fill="#0F8C82"/>
+              <circle cx="21" cy="46" r="6" fill="#0F8C82"/>
+              <path d="M21 28H53V46H21" stroke="#0F1722" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <div class="wordmark wordmark--axis" aria-label="Temporis wordmark"><span class="wide">T</span>EMPORIS</div>
+          </div>
+          <div class="chip-row">
+            <div class="chip">
+              <svg width="28" height="28" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="29" y="12" width="16" height="50" rx="8" fill="#0F1722"/><rect x="17" y="12" width="40" height="12" rx="6" fill="#0F1722"/><circle cx="21" cy="28" r="6" fill="#2563EB"/><circle cx="53" cy="28" r="6" fill="#2563EB"/><circle cx="53" cy="46" r="6" fill="#0F8C82"/><circle cx="21" cy="46" r="6" fill="#0F8C82"/><path d="M21 28H53V46H21" stroke="#0F1722" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="chip dark">
+              <svg width="28" height="28" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="29" y="12" width="16" height="50" rx="8" fill="#FFFFFF"/><rect x="17" y="12" width="40" height="12" rx="6" fill="#FFFFFF"/><circle cx="21" cy="28" r="6" fill="#2563EB"/><circle cx="53" cy="28" r="6" fill="#2563EB"/><circle cx="53" cy="46" r="6" fill="#0F8C82"/><circle cx="21" cy="46" r="6" fill="#0F8C82"/><path d="M21 28H53V46H21" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+          </div>
+        </div>
+        <p class="meta">A compact AI-like kernel built around a hidden `T` axis. Much less monogram-like, much more like a modern company symbol.</p>
+        <a class="link" href="concept-01-axis-flow.html">Open Concept</a>
+      </article>
+
+      <article class="card">
+        <div>
+          <p class="tag">Concept 02</p>
+          <h2>Temporal Grid v4</h2>
+        </div>
+        <div class="sample">
+          <div class="mark-row">
+            <svg width="74" height="74" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect x="29" y="12" width="16" height="50" rx="8" fill="#0F1722"/>
+              <path d="M14 17C14 14.2386 16.2386 12 19 12H55C57.7614 12 60 14.2386 60 17C60 19.7614 57.7614 22 55 22H19C16.2386 22 14 19.7614 14 17Z" fill="#0F1722"/>
+              <rect x="18" y="27" width="12" height="10" rx="5" fill="#2563EB"/>
+              <rect x="44" y="27" width="12" height="10" rx="5" fill="#2563EB"/>
+              <path d="M24 49C24 45.6863 26.6863 43 30 43H44C47.3137 43 50 45.6863 50 49C50 52.3137 47.3137 55 44 55H30C26.6863 55 24 52.3137 24 49Z" fill="#0F8C82"/>
+              <rect x="21" y="46" width="8" height="6" rx="3" fill="#0F8C82"/>
+              <rect x="45" y="46" width="8" height="6" rx="3" fill="#0F8C82"/>
+            </svg>
+            <div class="wordmark wordmark--interval" aria-label="Temporis wordmark"><span class="tempo">TEMP<span class="o">O</span>R</span><span class="ris"><span class="i">I</span>S</span></div>
+          </div>
+          <div class="chip-row">
+            <div class="chip">
+              <svg width="28" height="28" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="31" y="12" width="12" height="50" rx="6" fill="#0F1722"/><path d="M16 17C16 14.2386 18.2386 12 21 12H53C55.7614 12 58 14.2386 58 17C58 19.7614 55.7614 22 53 22H21C18.2386 22 16 19.7614 16 17Z" fill="#0F1722"/><rect x="12" y="26" width="16" height="12" rx="6" fill="#2563EB"/><rect x="47" y="26" width="15" height="12" rx="6" fill="#2563EB"/><path d="M19 50C19 45.5817 22.5817 42 27 42H47C51.4183 42 55 45.5817 55 50C55 54.4183 51.4183 58 47 58H27C22.5817 58 19 54.4183 19 50Z" fill="#0F8C82"/><rect x="15" y="46" width="10" height="8" rx="4" fill="#0F8C82"/><rect x="49" y="46" width="9" height="8" rx="4" fill="#0F8C82"/></svg>
+            </div>
+            <div class="chip dark">
+              <svg width="28" height="28" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="31" y="12" width="12" height="50" rx="6" fill="#FFFFFF"/><path d="M16 17C16 14.2386 18.2386 12 21 12H53C55.7614 12 58 14.2386 58 17C58 19.7614 55.7614 22 53 22H21C18.2386 22 16 19.7614 16 17Z" fill="#FFFFFF"/><rect x="12" y="26" width="16" height="12" rx="6" fill="#2563EB"/><rect x="47" y="26" width="15" height="12" rx="6" fill="#2563EB"/><path d="M19 50C19 45.5817 22.5817 42 27 42H47C51.4183 42 55 45.5817 55 50C55 54.4183 51.4183 58 47 58H27C22.5817 58 19 54.4183 19 50Z" fill="#0F8C82"/><rect x="15" y="46" width="10" height="8" rx="4" fill="#0F8C82"/><rect x="49" y="46" width="9" height="8" rx="4" fill="#0F8C82"/></svg>
+            </div>
+          </div>
+        </div>
+        <p class="meta">Refined again with a slightly fuller base and a less generic wordmark cadence so the symbol and name now feel more related.</p>
+        <a class="link" href="concept-02-interval-spine.html">Open Concept</a>
+      </article>
+
+      <article class="card">
+        <div>
+          <p class="tag">Concept 03</p>
+          <h2>Orbit Weave</h2>
+        </div>
+        <div class="sample">
+          <div class="mark-row">
+            <svg width="74" height="74" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect x="30" y="14" width="14" height="46" rx="7" fill="#0F1722"/>
+              <rect x="18" y="14" width="38" height="10" rx="5" fill="#0F1722"/>
+              <path d="M18 28C18 22.4772 22.4772 18 28 18H48C53.5228 18 58 22.4772 58 28C58 33.5228 53.5228 38 48 38H28C22.4772 38 18 42.4772 18 48C18 53.5228 22.4772 58 28 58H50" stroke="#2563EB" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="50" cy="58" r="5" fill="#0F8C82"/>
+            </svg>
+            <div class="wordmark wordmark--signal" aria-label="Temporis wordmark"><span class="wide">T</span>EMPOR<span class="tight">I</span>S</div>
+          </div>
+          <div class="chip-row">
+            <div class="chip">
+              <svg width="28" height="28" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="30" y="14" width="14" height="46" rx="7" fill="#0F1722"/><rect x="18" y="14" width="38" height="10" rx="5" fill="#0F1722"/><path d="M18 28C18 22.4772 22.4772 18 28 18H48C53.5228 18 58 22.4772 58 28C58 33.5228 53.5228 38 48 38H28C22.4772 38 18 42.4772 18 48C18 53.5228 22.4772 58 28 58H50" stroke="#2563EB" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="50" cy="58" r="5" fill="#0F8C82"/></svg>
+            </div>
+            <div class="chip dark">
+              <svg width="28" height="28" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="30" y="14" width="14" height="46" rx="7" fill="#FFFFFF"/><rect x="18" y="14" width="38" height="10" rx="5" fill="#FFFFFF"/><path d="M18 28C18 22.4772 22.4772 18 28 18H48C53.5228 18 58 22.4772 58 28C58 33.5228 53.5228 38 48 38H28C22.4772 38 18 42.4772 18 48C18 53.5228 22.4772 58 28 58H50" stroke="#2563EB" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="50" cy="58" r="5" fill="#0F8C82"/></svg>
+            </div>
+          </div>
+        </div>
+        <p class="meta">The most AI-like mark in the set: orbital, connected, and abstract, while still anchored by a stable vertical core.</p>
+        <a class="link" href="concept-03-signal-serifless.html">Open Concept</a>
+      </article>
+
+      <article class="card">
+        <div>
+          <p class="tag">Concept 04</p>
+          <h2>Signal Slash TS</h2>
+        </div>
+        <div class="sample">
+          <div class="mark-row">
+            <svg width="86" height="86" viewBox="0 0 86 86" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M13 20C13 16.6863 15.6863 14 19 14H56V24H43V70H31V24H19C15.6863 24 13 21.3137 13 18V20Z" fill="#0F1722"/>
+              <path d="M56 18C66.4934 18 75 26.5066 75 37C75 43.0991 72.1221 48.5261 67.6484 52V52.0156C71.5584 55.2167 74 60.0813 74 65.5156C74 75.1719 66.1719 83 56.5156 83H34V71H55.5C58.5376 71 61 68.5376 61 65.5C61 62.4624 58.5376 60 55.5 60H48V49H54C60.0751 49 65 44.0751 65 38C65 31.9249 60.0751 27 54 27H42V18H56Z" fill="#0F1722"/>
+              <path d="M15 60L31.5 43.5C35.366 39.634 41.634 39.634 45.5 43.5C49.366 47.366 55.634 47.366 59.5 43.5L76 27" stroke="#2BB3E6" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <div class="wordmark wordmark--axis" aria-label="Temporis wordmark">TEMPORIS</div>
+          </div>
+          <div class="chip-row">
+            <div class="chip">
+              <svg width="30" height="30" viewBox="0 0 86 86" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13 20C13 16.6863 15.6863 14 19 14H56V24H43V70H31V24H19C15.6863 24 13 21.3137 13 18V20Z" fill="#0F1722"/><path d="M56 18C66.4934 18 75 26.5066 75 37C75 43.0991 72.1221 48.5261 67.6484 52V52.0156C71.5584 55.2167 74 60.0813 74 65.5156C74 75.1719 66.1719 83 56.5156 83H34V71H55.5C58.5376 71 61 68.5376 61 65.5C61 62.4624 58.5376 60 55.5 60H48V49H54C60.0751 49 65 44.0751 65 38C65 31.9249 60.0751 27 54 27H42V18H56Z" fill="#0F1722"/><path d="M15 60L31.5 43.5C35.366 39.634 41.634 39.634 45.5 43.5C49.366 47.366 55.634 47.366 59.5 43.5L76 27" stroke="#2BB3E6" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="chip dark">
+              <svg width="30" height="30" viewBox="0 0 86 86" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13 20C13 16.6863 15.6863 14 19 14H56V24H43V70H31V24H19C15.6863 24 13 21.3137 13 18V20Z" fill="#FFFFFF"/><path d="M56 18C66.4934 18 75 26.5066 75 37C75 43.0991 72.1221 48.5261 67.6484 52V52.0156C71.5584 55.2167 74 60.0813 74 65.5156C74 75.1719 66.1719 83 56.5156 83H34V71H55.5C58.5376 71 61 68.5376 61 65.5C61 62.4624 58.5376 60 55.5 60H48V49H54C60.0751 49 65 44.0751 65 38C65 31.9249 60.0751 27 54 27H42V18H56Z" fill="#FFFFFF"/><path d="M15 60L31.5 43.5C35.366 39.634 41.634 39.634 45.5 43.5C49.366 47.366 55.634 47.366 59.5 43.5L76 27" stroke="#2BB3E6" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+          </div>
+        </div>
+        <p class="meta">Directly follows the `Gemini.png` logic: bold `TS` monogram with a single time-series stroke cutting through it, but cleaned into a more disciplined shape.</p>
+        <a class="link" href="concept-04-signal-slash-ts.html">Open Concept</a>
+      </article>
+    </section>
+
+    <p class="footer-note">Open each concept page for larger lockups, monochrome tests, app-icon previews, and design rationale.</p>
+  </main>
+</body>
+</html>
