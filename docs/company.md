@@ -35,6 +35,302 @@ Use this section as working reference material.
 - preserve rough ideas even if phrasing is incomplete
 - use it to inform page copy, not as direct publish-ready text
 
+## Interview notes
+This section preserves the founder interview in a more structured form than the raw bullets above.
+
+Use it when:
+
+- a page decision needs context
+- a wording choice needs to be revisited
+- the team wants to understand the reasoning behind the refined source content
+
+The wording here is still close to the interview, but grouped by topic so it is easier to reuse.
+
+### Company definition
+
+#### What Temporis is
+The founder explanation starts from the idea that a time series is a sequence of numbers that changes over time.
+
+The company ambition is broader than one launch domain:
+
+- Temporis aims to solve forecasting for any time series
+- the company is relevant anywhere decisions depend on how things change over time
+
+#### Best high-level framing
+The preferred top-level framing is:
+
+- Temporis helps people uncover patterns and make better decisions
+
+This is preferred over more abstract wording such as "time series solution company" because it is easier for normal readers to understand.
+
+### Why the company matters
+
+#### Problem
+The founder's view is that the main problem is friction of adoption.
+
+Current forecasting capability is often:
+
+- too custom
+- too expensive
+- too fragmented across companies and industries
+
+Each company or industry often builds its own solution.
+
+#### Why that matters
+Forecasting affects decision-making and outcomes.
+
+Better outcomes can mean:
+
+- more efficiency
+- easier use
+- better resource allocation
+- savings
+
+#### Long-term direction
+The founder also emphasized democratization:
+
+- strong forecasting capability is currently concentrated in a small number of organizations
+- Temporis should make that capability more broadly available
+
+### Company stage and identity
+
+#### Current stage
+The company is building its first generation of products.
+
+This should be preserved as internal context, but should not be foregrounded on the homepage because it weakens public impression.
+
+#### Nature of company
+The intended company identity is:
+
+- research-product company
+
+Infrastructure matters, but should not become the primary public label.
+
+### Homepage interview
+
+#### Core intent
+The homepage should:
+
+- stay at the company level
+- trigger curiosity about what the company can do
+- help normal readers understand why the company matters
+
+It should not:
+
+- foreground products in the hero
+- foreground research in the hero
+- foreground launch-stage weakness
+
+#### Best homepage framing
+The founder preferred outcome-first language over technology-first language.
+
+Current working pair:
+
+- Temporis helps people uncover patterns in things like prices and demand, and make better decisions.
+- Temporis is building AI tools that help people understand what may happen next and act with more context.
+
+#### Why this framing works
+Important interview conclusions:
+
+- helping people make better decisions is more connected to why a normal person should care
+- examples are better than abstract references to "data"
+- `prices` and `demand` are good homepage examples
+- AI should appear early, but not in the very first phrase
+
+#### Homepage tone
+The homepage should feel:
+
+- useful
+- intriguing
+- company-level
+
+But the team should avoid trying to force a very specific emotion beyond that.
+
+### Products interview
+
+#### Overall structure
+The founder described the Products page as:
+
+- one model, two products for different people and different usage
+
+The page should lead with products, not with the model.
+
+Preferred page direction:
+
+- Temporis turns forecasting into products people can use
+- Vista and Platform are two products built for different users and workflows
+- the first domain for these products is financial markets
+
+#### Vista
+Key founder points:
+
+- Vista is a forecast gallery
+- it shows line charts of forecasts
+- it is for people who want forecasting results shown as charts
+- at launch, the main audience is short-term traders
+
+The intended value flow is:
+
+1. read forecasts
+2. explore forecasts
+3. bring predictions into strategy
+
+The most important outcome is:
+
+- integration of predictions into trading strategy
+
+#### Platform
+Key founder points:
+
+- Platform is an API product
+- it is for people who want direct access to Collie
+- at launch, developers are the main audience
+- users can control model behavior by changing parameters
+- the main value is control plus direct integration
+
+Preferred explanation sequence:
+
+1. access Collie
+2. control model behavior
+3. integrate into their own systems
+
+#### Product domain
+The founder wants the Products page to say:
+
+- starting with financial markets
+
+This is preferred over narrower public wording like `stocks`.
+
+Reason for starting here:
+
+- familiar to many people
+- hot topic
+- good demonstration of what the company can do
+
+### Research interview
+
+#### Core role of Collie
+The founder's intent is that:
+
+- Collie is the model that powers use cases
+- Collie is the core of the company
+
+For readers, this was refined to:
+
+- Collie is the core forecasting model at Temporis
+
+#### Technical identity
+The founder naturally describes Collie as:
+
+- a time series foundation model
+- multivariate
+- multimodal
+
+But for readers, technical explanation should be ordered:
+
+1. what time series means
+2. what multivariate means
+3. what multimodal means
+
+#### Plain explanations from the interview
+Time series:
+
+- a sequence of numbers that changes over time
+- examples should stay broad, such as prices, demand, and weather
+
+Multivariate:
+
+- the model takes many related time series together rather than one in isolation
+
+Multimodal:
+
+- the model can combine different kinds of data
+- example: prices and news text together
+
+#### Why these capabilities matter
+The founder's reasoning included both:
+
+- broader usefulness across domains
+- better forecast quality through richer context
+
+The preferred ordering is:
+
+1. broader usefulness
+2. stronger forecasts from added context
+
+#### Meaning of the Research page
+The page should not only sound advanced.
+
+The founder wants it to leave readers with the sense that:
+
+- the research is meaningful
+- the company has real value and potential
+- the technology can grow stronger over time
+
+Primary reason the technology can grow stronger:
+
+- richer data and broader use cases over time
+
+#### Finance on the Research page
+Finance should appear as:
+
+- the starting point
+- not the limit
+
+Preferred line:
+
+- Finance is the starting point for Collie, not the limit of where it can be useful.
+
+### Company interview
+
+#### Vision
+The founder's long-form vision included:
+
+- bring the best of forecasting to everyone
+- advance forecasting research
+- connect with businesses across industries
+- work across public and private domains
+
+For public language, the direction was refined toward:
+
+- an AI company helping people and businesses make better decisions under uncertainty
+
+#### Mission logic
+Important interview conclusion:
+
+- mission should lead with better decisions
+- operational approach should follow with access and delivery
+
+That leads to this public structure:
+
+1. help people and businesses make better decisions under uncertainty
+2. develop forecasting technology
+3. make it accessible through products and integrations
+
+#### Integrations
+The founder clarified that `integrations` should mainly make readers think of:
+
+- integration into business data flows
+
+#### Audience
+The founder preferred:
+
+- individuals and businesses
+
+over broader but vaguer language like "anyone with forecasting needs."
+
+#### Contact
+The contact path should stay broad on the public page.
+
+It should be appropriate for:
+
+- users
+- customers
+- investors
+- people interested in joining
+
+But the page itself should not enumerate those categories too heavily.
+
 ### Company explanation
 - A time series is a sequence of numbers, like everyday's temperature.
 - Temporis aims at solving forecasting of any time series, so any decision that depends on how things change over time.

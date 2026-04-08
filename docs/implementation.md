@@ -1,506 +1,313 @@
 # Temporis Website Implementation Plan
 
-## 1. Purpose
-This document translates [design.md](design.md) into an implementation plan for the current repository.
+## Purpose
+This document defines how to implement the launch website described in:
 
-It defines:
+- [requirements.md](requirements.md)
+- [company.md](company.md)
+- [design.md](design.md)
 
-- page and file structure
-- build order
+It covers:
+
+- file structure
+- implementation order
+- page mapping
 - component mapping
-- content and asset requirements
-- accessibility, SEO, and performance requirements
-- launch criteria for each phase
+- content rules
+- responsive behavior
+- completion criteria
 
-The site remains a static website for v1.
+## Implementation model
+The launch site is a static website.
 
-Responsive behavior on both desktop and mobile is a required part of v1, not a follow-up task.
+The goal is to implement a clean, maintainable v1 using:
 
-### Domain and launch model
-- `temporis.co` and `www.temporis.co` host the company website.
-- Vista and Platform will eventually live on:
-  - `vista.temporis.co`
-  - `platform.temporis.co`
-- those product subdomains are not live yet.
-- for launch, product pages should live on the main company site as:
-  - `/vista`
-  - `/platform`
+- HTML
+- CSS
+- existing static assets where needed
 
-These are public product overview pages that can later redirect to the subdomains.
+Do not implement extra infrastructure unless it is required for launch.
 
-### Simplified IA rule
-The top-level site structure should stay at:
-- Products
-- Company
-- Contact
-
-Do not expose internal model terminology as a top-level navigation requirement for first-time visitors.
-
-## 2. Current Repo Assessment
-Current repo files:
+## Launch files
+The implementation should support these files:
 
 - [index.html](../index.html)
-- [about.html](../about.html)
-- [contact.html](../contact.html)
+- [product.html](../product.html)
+- [research.html](../research.html)
+- [company.html](../company.html)
+- [terms.html](../terms.html)
 - [styles.css](../styles.css)
 
-Current issues relative to the design:
+Legacy files such as `about.html`, `contact.html`, `vista.html`, `platform.html`, `privacy.html`, and `disclaimer.html` should not drive the current implementation plan.
 
-- `about.html` and `contact.html` likely need content and layout rewrites.
-- `index.html` uses consulting-style messaging and must be rebuilt.
-- `styles.css` is a generic single-theme stylesheet and should be replaced with a more deliberate system.
-- required pages for `Vista`, `Platform`, and legal documents do not yet exist.
+## Build order
+Implement the site in layers.
 
-## 3. Target File Structure
-
-### Keep
-- [index.html](../index.html)
-- [contact.html](../contact.html)
-- [styles.css](../styles.css)
-
-### Rewrite / repurpose
-- [about.html](../about.html) -> company page content
-
-### Create
-- `vista.html`
-- `platform.html`
-- `privacy.html`
-- `terms.html`
-- `disclaimer.html`
-- optional shared assets folder later if screenshots or diagrams are added
-
-### Recommended v1 routing
-- `/` -> `index.html`
-- `/vista` -> `vista.html`
-- `/platform` -> `platform.html`
-- `/company` -> `about.html`
-- `/contact` -> `contact.html`
-- `/privacy` -> `privacy.html`
-- `/terms` -> `terms.html`
-- `/disclaimer` -> `disclaimer.html`
-
-### Future routing plan
-- when `vista.temporis.co` is ready, `/vista` can redirect there
-- when `platform.temporis.co` is ready, `/platform` can redirect there
-- the product pages should remain the canonical explanation layer until those destinations are live
-
-## 4. Build Strategy
-Build the site in layers, not page by page in isolation.
-
-### Layer 1: global system
-- typography
-- color tokens
-- spacing scale
+### Layer 1: shared system
+- global CSS tokens
 - layout containers
-- buttons
-- nav
+- typography
+- header
 - footer
-- card system
-- screenshot frame
-- code block
-- disclosure block
+- buttons and links
+- card and panel patterns
 
 ### Layer 2: homepage
 - hero
-- why Temporis
-- Vista / Platform split
-- company / research section
-- trust section
-- final CTA
+- supporting company sections
+- footer integration
 
-### Layer 3: product pages
-- Vista
-- Platform
+### Layer 3: inner pages
+- Products page
+- Research page
+- Company page
+- Terms page
 
-### Layer 4: supporting pages
-- Company
-- Contact
-- Legal pages
+### Layer 4: consistency pass
+- responsive review
+- accessibility review
+- copy consistency
+- navigation and footer consistency
 
-This avoids rebuilding the same design decisions multiple times.
-
-## 5. Page-to-File Mapping
+## Page-to-file mapping
 
 ### Home
 File:
+
 - [index.html](../index.html)
 
+Purpose:
+
+- company-level introduction
+
 Required sections:
-- sticky header
+
+- shared header
 - hero
-- why Temporis
-- product split
-- company / research section
-- trust / responsible use
-- final CTA
-- footer
+- what Temporis is
+- why it matters / launch focus
+- shared footer
 
-### Temporis Vista
+### Products
 File:
-- `../vista.html`
+
+- [product.html](../product.html)
+
+Purpose:
+
+- explain Vista and Platform
 
 Required sections:
-- product hero
-- who it is for
-- what users see
-- screenshot or chart gallery
-- why visual forecasting workflow matters
-- CTA for early access or product interest
-- disclosure block
 
-Visual rule:
-- the page should work as an "imagining" page with bold type and meaningful motion or visual energy
+- shared header
+- page introduction
+- Vista section
+- Platform section
+- short closing connection to Temporis
+- shared footer
 
-Launch behavior:
-- primary CTA should point to a local action for now, such as request access, join early access, or contact
-- page should support a later CTA swap to `https://vista.temporis.co`
-- page URL should remain `temporis.co/vista` until the dedicated product host is ready
-
-### Temporis Platform
+### Research
 File:
-- `../platform.html`
+
+- [research.html](../research.html)
+
+Purpose:
+
+- explain Collie
 
 Required sections:
-- product hero
-- who it is for
-- API overview
-- example use cases
-- request / response snippet
-- access flow
-- CTA for early access or API interest
-- disclosure block
 
-Visual rule:
-- the page should work as an "imagining" page with bold type and meaningful motion or visual energy
-
-Launch behavior:
-- primary CTA should point to a local action for now, such as request API access, join early access, or contact
-- page should support a later CTA swap to `https://platform.temporis.co`
-- page URL should remain `temporis.co/platform` until the dedicated product host is ready
+- shared header
+- Collie introduction
+- explanation of time series
+- explanation of multivariate
+- explanation of multimodal
+- why the capabilities matter
+- finance as starting point
+- shared footer
 
 ### Company
 File:
-- [about.html](../about.html)
+
+- [company.html](../company.html)
+
+Purpose:
+
+- explain mission, nature, and contact
 
 Required sections:
-- company summary
-- mission
-- market focus
-- research / model explanation
-- how the core engine powers Vista and Platform
-- product-led structure
-- team or company facts
-- contact path
 
-### Contact
+- shared header
+- company introduction
+- mission / better decisions under uncertainty
+- forecasting technology through products and integrations
+- contact section
+- shared footer
+
+### Terms
 File:
-- [contact.html](../contact.html)
+
+- [terms.html](../terms.html)
+
+Purpose:
+
+- readable legal page
 
 Required sections:
-- contact intro
-- inquiry type selector
-- form
-- direct email path
-- response expectations
 
-### Legal
-Files:
-- `../privacy.html`
-- `../terms.html`
-- `../disclaimer.html`
-
-Required sections:
-- clear heading
+- shared header
+- title
 - last updated line
-- readable legal body
-- footer navigation
+- legal body
+- shared footer
 
-## 6. Component Mapping
-Use a small static component vocabulary expressed through repeated HTML patterns and CSS classes.
+## Shared component mapping
+Use a small repeated component vocabulary.
 
 ### Global components
 - `site-header`
 - `site-nav`
 - `site-logo`
-- `button`
-- `button-primary`
-- `button-secondary`
+- `nav-try`
 - `section-shell`
 - `section-intro`
 - `site-footer`
 
-### Marketing / product components
+### Content components
 - `hero`
 - `hero-copy`
-- `hero-media`
-- `product-split`
-- `product-card`
+- `feature-card`
+- `surface-panel`
+- `note-panel`
+- `bridge-panel`
+- `sequence-item`
+- `legal-shell`
+
+### Optional visual components
 - `media-frame`
-- `trust-panel`
-- `cta-band`
-- `comparison-block`
-- `imagining-hero`
-
-### Technical components
-- `code-block`
-- `code-header`
+- `chart-mock`
+- `mini-chart`
+- `mini-code`
 - `metric-tag`
-- `flow-diagram`
 
-### Contact / legal components
-- `contact-form`
-- `select-group`
-- `form-group`
-- `legal-layout`
-- `legal-meta`
+Only keep optional components if they support the current launch pages.
 
-## 7. CSS System Plan
-Use one stylesheet for v1 unless it becomes unmanageable.
+## CSS system rules
+Use one shared stylesheet for launch.
 
-### CSS responsibilities in [styles.css](../styles.css)
-- CSS custom properties for color, spacing, typography, radius, border, and motion
-- base element styling
-- layout utilities
-- component classes
-- page-specific section styling where necessary
+`styles.css` should own:
+
+- color tokens
+- typography tokens
+- spacing scale
+- container widths
+- shared layout classes
+- reusable page-section patterns
 - responsive breakpoints
 
-### Responsive implementation rule
-Every global component and every page section should be implemented with desktop and mobile behavior in mind from the start. Do not design desktop first and treat mobile as cleanup.
+Rules:
 
-### Token groups to define
-- colors
-- font families
-- type scale
-- spacing scale
-- border radius
-- shadow levels
-- container widths
-- transition timing
+- do not solve page-specific layout needs with ad hoc one-off selectors first
+- prefer reusable classes over deeply page-specific rules
+- keep the system small enough to understand
 
-### CSS rule
-Do not implement page-specific visuals by piling ad hoc inline styles or one-off selectors into each page. Build reusable section and component classes first.
+## Content implementation rules
+Page copy should come from [company.md](company.md).
 
-## 8. Content Implementation Rules
+Rules:
 
-### Content status model
-Every page section should be implemented with one of three statuses:
-
-- final copy ready
-- temporary structured placeholder
-- asset pending
-
-### Placeholder rule
-If final copy or screenshots are not ready, use clearly structured placeholder content that preserves layout and hierarchy. Do not use lorem ipsum.
-
-### Copy implementation rules
-- use the full product names at first mention on each page
-- keep paragraphs short
+- do not invent new company claims during implementation
 - keep headlines literal and clear
-- avoid introducing new claims that are not in the PRD or design plan
+- keep paragraphs short
+- keep page language appropriate to page audience
 
-### Interim-launch messaging rule
-For `/vista` and `/platform`, avoid empty "coming soon" language. Instead, use product-intent language such as:
+Audience reminders:
 
-- preview
-- early access
-- request access
-- product path
-- currently launching from temporis.co
+- Home: plain language
+- Products: practical product language
+- Research: technical but explained
+- Company: mission and company language
 
-The pages should feel substantive enough to stand alone until the subdomains are live.
+## Navigation rules
+Every launch page should use the same top navigation:
 
-### Interim CTA pattern
-For `/vista` and `/platform`, use one of these patterns consistently:
+- `Products`
+- `Research`
+- `Company`
+- `Try Vista`
 
-- primary CTA: request access
-- secondary CTA: contact
+The brand should link to `index.html`.
 
-or
+`terms.html` should appear only in the footer.
 
-- primary CTA: join early access
-- secondary CTA: learn more
+## Footer rules
+Every launch page should use a shared footer that includes:
 
-Do not mix one product page using "coming soon" while the other uses a stronger action model.
+- company name
+- short descriptor
+- `hello@temporis.co`
+- `terms.html`
 
-### Comprehension rule
-Apply the same standards used in strong pitch decks:
-- legible
-- simple
-- obvious
+## Responsive implementation rules
+Responsive behavior must be built in from the start.
 
-If a page section introduces a concept too early or forces the visitor to decode internal terminology, simplify it.
+Rules:
 
-## 9. Asset Requirements
+- do not build desktop first and patch mobile later
+- test the header early
+- stack page sections cleanly at smaller widths
+- keep readable spacing and type sizes on mobile
+- preserve section order when collapsing layouts
 
-### Existing assets
-- current logo files can be evaluated, but the implementation should not assume they are final
-
-### Required assets for a strong v1
-- one chosen logo lockup
-- at least one Vista screenshot
-- at least one Platform screenshot or interface capture
-- one simple company or research system diagram if needed
-
-### If assets are not ready
-Use:
-- framed placeholder panels labeled by asset role
-- simplified inline SVG or CSS diagram blocks
-- neutral mock interface compositions that communicate layout but avoid fake product claims
-
-## 10. Navigation and Linking Rules
-
-### Header
-- present on every page
-- same order on every page
-- same top-level nav on all company-level pages
-
-Top-level nav should remain:
-- Products
-- Company
-- Contact
-
-### Footer
-- present on every page
-- include legal links
-- include product and company links
-
-### Internal linking rules
-- Home must link to Products, Company, and Contact
-- Products must route clearly to Vista and Platform
-- Company must link to Contact
-- chart or forecast-heavy pages must link to Disclaimer
-- during the interim phase, homepage product CTAs should link to `/vista` and `/platform`
-- when the subdomains go live, those links can be switched to the subdomains without restructuring the page
-
-## 11. Accessibility Checklist
-Implementation is not complete unless all of the following are true:
+## Accessibility rules
+Implementation is not complete unless:
 
 - heading order is semantic
-- nav is keyboard accessible
-- focus state is visible on links, buttons, inputs, and menu items
-- color contrast is sufficient for body text and controls
-- forms use labels and clear error or hint structure
-- images and diagrams have useful alt text
-- mobile layout is readable without horizontal scrolling
-- CTA buttons remain distinguishable without color alone
+- keyboard focus is visible
+- contrast is strong enough for text and controls
+- alt text is used where needed
+- navigation works by keyboard
+- pages remain usable without horizontal scrolling
 
-### Responsive checklist
-Implementation is not complete unless:
-- homepage works on both desktop and mobile
-- header navigation remains understandable on mobile
-- product pages keep their key CTA and disclosure visible on smaller screens
-- forms remain usable on touch devices
-- legal pages remain readable without cramped text columns
-- the top navigation remains immediately understandable without prior product knowledge
-
-## 12. SEO Checklist
-Each page should include:
+## SEO rules
+Each launch page should have:
 
 - unique title
 - unique meta description
-- canonical-friendly clean path assumptions
 - semantic headings
-- internal links to related pages
+- crawlable internal links
 
-### Suggested title pattern
-- `Temporis | AI Forecasting for Financial Markets`
-- `Temporis Vista | Visual Forecasts`
-- `Temporis Platform | Forecasting API Access`
-- `Company | Temporis`
-- `Contact | Temporis`
+## Placeholder rule
+If a visual asset is not ready:
 
-## 13. Analytics Plan
-If analytics are added, track only essential events.
+- use a structured placeholder
+- keep the intended layout
+- do not use lorem ipsum
+- do not imply product claims that are not real
 
-### Event list
-- homepage vista CTA click
-- homepage platform CTA click
-- vista page CTA click
-- platform page CTA click
-- contact email CTA click
-- top-nav product click
+## Work order in this repo
 
-### Optional access events
-- vista access CTA click
-- platform access CTA click
-- direct email click
+1. Align [styles.css](../styles.css) with the shared launch system.
+2. Rework [index.html](../index.html) to match the homepage requirements.
+3. Rework [product.html](../product.html).
+4. Rework [research.html](../research.html).
+5. Rework [company.html](../company.html).
+6. Rework [terms.html](../terms.html).
+7. Run a full cross-page consistency pass.
 
-### Rule
-Do not block launch on analytics setup. Structure the markup so event hooks can be added cleanly later.
+## Definition of implementation done
+Implementation is done when:
 
-## 14. Phased Delivery Plan
-
-### Phase 1: system and homepage
-Deliver:
-- rebuilt `styles.css`
-- rebuilt `index.html`
-- unified nav and footer
-- initial brand expression
-
-Acceptance:
-- homepage clearly routes Vista vs Platform
-- company story is clear in one screen and one scroll
-- responsive layout works on mobile and desktop
-- header remains understandable on mobile
-
-### Phase 2: product pages
-Deliver:
-- `vista.html`
-- `platform.html`
-
-Acceptance:
-- each page feels distinct but system-consistent
-- product purpose is immediately clear
-- access CTA targets are present
-- disclosures appear where required
-- each page can later change CTA destination to the subdomain without layout changes
-- each page feels intentional and complete as a public product overview
-
-### Phase 3: supporting pages
-Deliver:
-- rebuilt `about.html`
-- rebuilt `contact.html`
-- legal pages
-
-Acceptance:
-- company page feels factual and credible
-- contact page is usable and low-friction
-- legal pages are readable and linked sitewide
-
-## 15. Recommended Work Order in This Repo
-
-1. Rework [styles.css](../styles.css) into a tokenized design system.
-2. Rebuild [index.html](../index.html) around the new homepage wireframe.
-3. Create `vista.html` and `platform.html`.
-4. Rewrite [about.html](../about.html) as the company page.
-5. Rewrite [contact.html](../contact.html).
-6. Create `privacy.html`, `terms.html`, and `disclaimer.html`.
-7. Remove obsolete logo experiments and legacy pages that are no longer linked.
-8. Run a final cross-page pass for nav consistency, copy consistency, accessibility, and SEO metadata.
-
-## 16. Definition of Done
-Implementation is complete when:
-
-- all required pages exist
+- the five launch files exist and are coherent
 - navigation and footer are consistent across pages
-- the site matches the information architecture in [design.md](design.md)
-- the brand feels product-led, technically serious, and restrained
-- all pages are responsive
-- legal links exist and are reachable
-- major CTAs route correctly
-- placeholder content is clearly marked where final assets are pending
-- `/vista` and `/platform` work as clear public product overview pages before subdomain launch
-- the future redirect path to `vista.temporis.co` and `platform.temporis.co` is straightforward
+- the pages follow [requirements.md](requirements.md)
+- the pages draw from [company.md](company.md)
+- the UX matches [design.md](design.md)
+- the site works on desktop and mobile
+- the site remains clear and low-hype
 
-Responsive quality specifically means the site is usable, legible, and structurally clear on both desktop and mobile.
+## Immediate next step
+The next practical step is:
 
-Comprehension quality specifically means a first-time visitor can understand the company from the top navigation and first screen without decoding internal terminology first.
-
-## 17. Immediate Next Step
-The next practical step is to implement Phase 1:
-
-- rebuild [styles.css](../styles.css)
-- rebuild [index.html](../index.html)
-
-That gives the project the visual system, navigation, and homepage structure needed for the rest of the site.
+1. align [index.html](../index.html) to the current docs
+2. adjust [styles.css](../styles.css) only as needed to support that page cleanly

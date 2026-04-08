@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Temporis | AI Tools for Better Decisions</title>
-    <meta name="description" content="Temporis helps people uncover patterns, understand what may happen next, and make better decisions. Explore the products, research, and company.">
+    <title>Products | Temporis</title>
+    <meta name="description" content="Explore Vista and Platform, the Temporis products that turn forecasting into tools people can use, starting with financial markets.">
     <link rel="icon" href="logo.svg" type="image/svg+xml">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body class="page-home">
+<body class="page-products">
     <header class="site-header">
         <div class="header-inner">
             <a class="site-logo site-logo-header" href="index.html" aria-label="Temporis home">
@@ -20,7 +20,7 @@
             <div class="site-nav site-nav-desktop">
                 <nav aria-label="Primary">
                     <ul class="nav-list">
-                        <li><a href="product.html">Products</a></li>
+                        <li><a href="product.html" aria-current="page">Products</a></li>
                         <li><a href="research.html">Research</a></li>
                         <li><a href="company.html">Company</a></li>
                         <li><a class="nav-try" href="https://vista.temporis.co" target="_blank" rel="noopener noreferrer">Try Vista</a></li>
@@ -32,7 +32,7 @@
                     <summary aria-label="Open navigation menu">Menu</summary>
                     <nav aria-label="Mobile">
                         <ul class="mobile-menu-list">
-                            <li><a href="product.html">Products</a></li>
+                            <li><a href="product.html" aria-current="page">Products</a></li>
                             <li><a href="research.html">Research</a></li>
                             <li><a href="company.html">Company</a></li>
                         </ul>
@@ -47,42 +47,56 @@
     </header>
 
     <main>
-        <section class="hero">
+        <section class="page-hero">
             <div class="section-shell hero-grid">
                 <div class="hero-copy">
-                    <div class="eyebrow">Temporis</div>
-                    <h1>Uncover patterns. Make better decisions.</h1>
-                    <p>Temporis helps people uncover patterns in things like prices and demand, and make better decisions.</p>
-                    <p class="trust-line">Built for decision support and disciplined interpretation.</p>
+                    <div class="eyebrow">Product</div>
+                    <h1>Forecasting turned into products people can use.</h1>
+                    <p>Vista and Platform are two products built for different users and workflows.</p>
+                    <p>Temporis is starting with financial markets.</p>
                 </div>
             </div>
         </section>
 
         <section class="section alt">
-            <div class="section-shell">
-                <div class="section-intro">
-                    <div class="eyebrow">What Temporis Is</div>
-                    <h2>Temporis is an AI company focused on forecasting.</h2>
-                    <p>The company connects research and products from the start, so forecasting becomes something people can actually use.</p>
+            <div class="section-shell spotlight-grid">
+                <div class="rich-copy">
+                    <div class="section-intro">
+                        <div class="eyebrow">Vista</div>
+                        <h2>A forecast gallery that shows forecasts in charts.</h2>
+                        <p>Vista is built for short-term traders. It helps users read forecasts, explore them visually, and bring predictions into strategy.</p>
+                    </div>
+                    <ul class="detail-list">
+                        <li>Forecast gallery format.</li>
+                        <li>Built for short-term traders.</li>
+                        <li>Designed to make predictions easier to use in strategy.</li>
+                    </ul>
+                </div>
+                <div class="media-shell media-frame">
+                    <div class="mini-chart" aria-hidden="true"></div>
                 </div>
             </div>
         </section>
 
         <section class="section">
-            <div class="section-shell">
-                <div class="section-intro">
-                    <div class="eyebrow">Why It Matters</div>
-                    <h2>Better forecasting leads to better decisions.</h2>
-                    <p>Better forecasting gives people more context for important decisions. Temporis exists to make that capability easier to access and more useful in the real world.</p>
-                </div>
-                <div class="pair-grid">
-                    <div class="surface-panel">
-                        <h3>Patterns before action</h3>
-                        <p>When people can see patterns more clearly, they are better equipped to judge what matters, what is changing, and what may happen next.</p>
+            <div class="section-shell spotlight-grid">
+                <div class="rich-copy">
+                    <div class="section-intro">
+                        <div class="eyebrow">Platform</div>
+                        <h2>An API product for developers.</h2>
+                        <p>Platform provides direct access to Collie. It lets teams control model behavior and integrate forecasting into their own systems.</p>
                     </div>
-                    <div class="surface-panel">
-                        <h3>Broader access</h3>
-                        <p>Strong forecasting tools are often hard to access and hard to use. Temporis aims to make them easier to reach through products people can actually use.</p>
+                    <ul class="detail-list">
+                        <li>Access Collie directly.</li>
+                        <li>Control model behavior with parameters.</li>
+                        <li>Integrate forecasting into existing systems.</li>
+                    </ul>
+                </div>
+                <div class="media-shell media-frame">
+                    <div class="mini-code">
+                        <pre><code>POST /forecasts
+{ symbol: "SPY", horizon: "1d" }
+{ scenario: "base", confidence: 0.71 }</code></pre>
                     </div>
                 </div>
             </div>
@@ -108,7 +122,7 @@
             </div>
             <div class="footer-meta">
                 <span>&copy; 2026 Temporis. All rights reserved.</span>
-                <span>Company introduction</span>
+                <span>Products for financial markets</span>
             </div>
         </div>
     </footer>
