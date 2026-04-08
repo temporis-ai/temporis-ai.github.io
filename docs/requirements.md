@@ -1,752 +1,415 @@
-# Temporis Official Website PRD
-## High-Level Guidance for Design and Implementation
+# Temporis Launch Website Requirements
 
-## 1. Purpose
-Temporis needs an official public website at `temporis.co` that acts as the company’s front door.
+## Purpose
+This document is the single source of truth for the requirements of the first public launch of the Temporis company website.
 
-The site should do four things well:
-1. Explain what Temporis is.
-2. Make the product structure obvious.
-3. Build trust with customers, partners, and investors.
-4. Route visitors to **Temporis Vista** and **Temporis Platform**.
+It defines:
 
-This is not the product itself. It is the company website and public narrative layer.
+- what pages must exist for launch
+- what each page is for
+- what the homepage must communicate
+- what the launch site must avoid
 
-### Explicit requirement
-The website must be responsive and work well on both desktop and mobile from the first public version.
+This document defines requirements and scope.
+It does not define the company content source. That belongs in [company.md](company.md).
 
----
+## Document model
+Use the two-document system below:
 
-## 2. What the site must communicate
-The site must make the following structure immediately clear:
+- `requirements.md` defines launch scope, page requirements, and constraints.
+- `company.md` defines company facts, positioning, safe claims, and source content.
 
-- **Temporis** = the company
-- **Temporis Vista** = the visual forecast product
-- **Temporis Platform** = the API product
+If there is a conflict:
 
-### Core company story
-Temporis is an AI company building forecasting products for financial markets.
+- `requirements.md` decides structure and scope
+- `company.md` decides substance and wording direction
 
-Its mission is to expand access to AI for people who rely on forecasting and prediction for decision-making.
-
-At the current stage, the company is focused on short-term financial-market forecasting.
+## Launch scope
+The first public launch should be a simple company website, not a large marketing site and not the product itself.
 
-The company should be presented as **product-led and AI-native**: the products are the customer-facing expression of the company, and the model layer is the core technical engine that creates value.
+The launch website must include these pages:
 
-### What matters most
-The highest-value problem for the website is **clarity**, not feature depth.
+- main homepage: `index.html`
+- products page: `product.html`
+- research page: `research.html`
+- company page: `company.html`
 
-### Communication principle
-The site should communicate like a strong pitch deck:
-- legible
-- simple
-- obvious
-
-Visitors should be able to understand the company quickly without decoding internal terminology or navigating through too many abstract concepts.
-
----
-
-## 3. Product and business context
-### Temporis Vista
-A subscription product for users who want to view forecast charts directly.
-
-The experience should be understood as:
-- visual,
-- immediate,
-- practical,
-- and decision-support oriented.
-
-### Temporis Platform
-An API platform for users who want direct access to Temporis forecasting technology.
-
-The experience should be understood as:
-- technical,
-- flexible,
-- builder-oriented,
-- and integration-ready.
-
-### Why this matters for the website
-The company site must support two different buying/evaluation paths:
-- **forecast consumers** who want a clear visual product,
-- **technical buyers/builders** who want programmatic access.
-
-The design should support this split early and clearly.
-
----
-
-## 4. Primary audiences
-### Primary audiences
-1. **Prospective Vista users**
-   - want to understand what the charts show,
-   - why they are useful,
-   - and how to access them.
-
-2. **Prospective Platform users**
-   - want to understand what the API provides,
-   - how it fits their workflow,
-   - and how to get access.
-
-### Secondary audiences
-3. **Investors and partners**
-   - want company clarity,
-   - technical credibility,
-   - market focus,
-   - and a sense that the company is real and focused.
-
-4. **Press and ecosystem visitors**
-   - want a concise, factual explanation of the company.
-
-### Design implication
-The site should not assume one audience. It should create **clean branching paths**.
-
-That branching should happen inside a clearly labeled products area, not through a crowded top-level navigation.
-
----
-
-## 5. Product principles for the website
-The site should be:
-- clear,
-- credible,
-- product-led,
-- AI-native,
-- technically serious,
-- visually restrained,
-- and easy to navigate.
-
-It should not feel like:
-- a generic consulting firm,
-- a generic analytics company,
-- an advisory business,
-- a crypto trading site,
-- or an over-styled AI landing page.
-
-### Website philosophy
-The site should feel like a strong early-stage company:
-- focused,
-- serious,
-- opinionated,
-- product-led,
-- and technically deep,
-- but not inflated.
-
----
-
-## 6. Brand expression guidance
-This section defines the high-level brand direction that should guide logo, visual identity, UI, and marketing design.
-
-### Brand attributes
-Temporis should feel:
-- precise,
-- calm,
-- intelligent,
-- rigorous,
-- modern,
-- and trustworthy.
-
-### Emotional tone
-Visitors should feel:
-- “This company knows what it is doing.”
-- “This is a real product company, not a vague AI brand.”
-- “The technology is serious, but the company explains it clearly.”
-
-### Voice and copy tone
-Copy should be:
-- concise,
-- direct,
-- technically grounded,
-- and low-hype.
-
-Avoid:
-- generic AI buzzwords,
-- exaggerated claims,
-- “future of everything” language,
-- vague strategic-advisory language,
-- and language that implies guaranteed investment outcomes.
-
----
-
-## 7. Logo guidance
-The logo should be simple, clean, and durable.
-
-### Recommendation
-Design a **two-part company identity system**:
-
-- a custom `Temporis` wordmark
-- a distinct `TS` company mark
-
-These should be designed together and feel like parts of the same brand system.
-
-### Reference practice
-Use companies like Anthropic as a reference for logo practice:
-
-- the company can have both a clean wordmark and a separate compact logo mark
-- restraint can create more trust than symbolic complexity
-- the website and product visuals can carry more narrative than the logo itself
-- the wordmark and logo mark should feel systemically related, not assembled from unrelated ideas
-
-Do not copy their logo style directly, but follow the principle that a serious AI company can build recognition through a disciplined wordmark plus a compact, memorable company mark.
-
-### Desired logo qualities
-- readable at small sizes
-- professional in product UI and investor contexts
-- works in one color
-- works in dark and light backgrounds
-- feels more like infrastructure/research than consumer lifestyle branding
-
-### Symbol direction
-The `TS` logo mark should be abstract and restrained.
-
-Possible concept directions:
-- temporal sequence
-- signal / waveform
-- layered horizon
-- time window
-- structured flow
-
-The mark should ideally carry both meanings:
-
-- `Temporis`
-- `time series`
-
-### Avoid
-- clocks or literal stopwatch icons
-- generic “AI brain” visuals
-- mascots
-- overly sharp finance-arrow clichés
-- anything that looks like a trading signal service badge
-
-### Practical guidance
-For v1, the logo system should include both:
-
-- a polished `Temporis` wordmark for company-level branding
-- a polished `TS` mark for compact use, favicon, app icon, and social/avatar contexts
-
-The `TS` mark should not replace the wordmark, and the wordmark should not make the `TS` unnecessary. Each should have a clear job in the system.
-
----
-
-## 8. Visual design direction
-### Overall look
-The UI should be:
-- minimal,
-- premium,
-- structured,
-- and quiet.
-
-### Design language
-Use a visual system that suggests:
-- signal,
-- sequence,
-- forecasting,
-- probability,
-- and structured data.
-
-### Best visual anchors
-- product screenshots
-- real chart crops
-- simple diagrams
-- restrained grids
-- subtle motion
-- clear typography
-
-### Avoid
-- decorative 3D AI art
-- random gradients without purpose
-- stock-market cliches everywhere
-- visually noisy dashboards on the homepage
-- visual effects that compete with the message
-
----
-
-## 9. Color system guidance
-The color system should support trust and clarity.
-
-### Recommendation
-Use:
-- a neutral base,
-- one primary brand accent,
-- one support accent if needed,
-- strong contrast for readability.
-
-### Desired effect
-The palette should feel:
-- technical,
-- stable,
-- and premium.
-
-It should not feel playful or speculative.
-
-### Usage guidance
-- most of the site should rely on neutrals,
-- accent color should be used intentionally for CTAs, links, focus states, and highlights,
-- charts should not rely only on brand color.
-
----
-
-## 10. Typography guidance
-Typography should do most of the design work.
-
-### Recommendation
-Use a clean modern sans-serif system with strong legibility.
-
-### Desired type feel
-- crisp
-- contemporary
-- technical but not cold
-- readable across desktop and mobile
-
-### Practical rules
-- strong hierarchy
-- short line lengths
-- generous spacing
-- restrained headline size
-- clear contrast between headline, body, metadata, and UI labels
-
-Avoid decorative display typography.
-
----
-
-## 11. Layout guidance
-### Page structure
-Layouts should be simple and consistent.
-
-Use:
-- clear section rhythm
-- generous whitespace
-- predictable alignment
-- narrow content width for text
-- wider content width for screenshots/diagrams where needed
-
-### Grid direction
-Use a structured grid that supports:
-- text-heavy explanation,
-- product comparisons,
-- technical content,
-- and screenshots.
-
-### Spacing
-Spacing should communicate maturity.
-The site should breathe.
-
-Do not compress too much information above the fold.
-
-### Responsive requirement
-The layout system must adapt cleanly across desktop and mobile.
-
-This means:
-- no horizontal scrolling in standard use
-- navigation remains understandable on smaller screens
-- CTAs remain prominent and tappable on mobile
-- screenshots, diagrams, and code examples remain readable
-- the information hierarchy stays consistent as layouts collapse
-
----
-
-## 12. Imagery and illustration guidance
-### Use real product visuals
-The most important visual assets are:
-- Vista screenshots
-- chart examples
-- Platform UI captures
-- simple diagrams explaining Collie
-
-### Illustration style
-If illustrations are used, they should be schematic and minimal.
-
-Examples:
-- model-input/output diagrams
-- forecast sequence diagrams
-- simple ecosystem/product relationship diagrams
-
-### Avoid
-- abstract hero art with no meaning
-- stock photos of traders or teams unless truly necessary
-- decorative illustrations that do not explain anything
-
----
-
-## 13. Motion guidance
-Motion should be light and purposeful.
-
-### Good uses
-- section reveal
-- subtle hover states
-- chart/screenshot transitions
-- navigation feedback
-
-### Avoid
-- cinematic hero animations
-- heavy parallax
-- distracting number counters
-- motion that makes the company feel less serious
-
-For v1, motion should be optional, not central.
-
----
-
-## 14. Information architecture
-## Required pages
-1. **Home**
-2. **Vista**
-3. **Platform**
-4. **Company**
-5. **Contact**
-6. **Legal**
-   - Privacy
-   - Terms
-   - Disclaimer / Risk disclosure
-
-### Optional later pages
-- Research / Insights
-- Press
-- Careers
-- Case studies
-
-### Navigation
-Header nav should be compact:
-- Products
+The launch website must also include:
+
+- terms page: `terms.html`
+
+`terms.html` should be linked in the footer only.
+It should not appear as a top-level navigation item.
+
+## Launch navigation
+The top-level public navigation for launch should be:
+
+- `Products`
+- `Research`
+- `Company`
+- `Try Vista`
+
+The brand `Temporis` should anchor the header and link to the homepage.
+
+## Launch objective
+The launch site should work as the public front door to the company.
+
+On a first visit, a reader should quickly understand:
+
+- Temporis is the company
+- Temporis helps people uncover patterns and make better decisions
+- the company is research-driven and product-led
+
+The launch site should feel clear, serious, and intentionally narrow in scope.
+
+## Site-wide requirements
+
+### Required structure
+The site structure must be immediately legible:
+
+- `index.html` explains the company at a high level
+- `product.html` explains Vista and Platform
+- `research.html` explains Collie
+- `company.html` explains vision, nature, and contact
+
+### Required footer behavior
+All launch pages should include a footer with:
+
+- company name
+- short company descriptor
+- public contact email: `hello@temporis.co`
+- link to `terms.html`
+
+### Required quality bar
+The launch site must be:
+
+- clear
+- credible
+- low-hype
+- easy to navigate
+- responsive on desktop and mobile
+
+### Non-goals
+The launch site should not:
+
+- try to explain everything on one page
+- make hard-to-support performance claims
+- present the company like a consultancy
+- behave like a generic SaaS template
+- feel like a crypto or trading-signals site
+
+## Homepage requirements
+The homepage is the most important page in the launch set.
+
+It applies to:
+
+- URL: `https://temporis.co/`
+- file: `index.html`
+
+### Homepage objective
+The homepage should work as the front door to the company.
+
+On a first visit, a reader should quickly understand:
+
+- what Temporis is
+- what the company builds
+- how Product, Research, and Company fit together
+
+The homepage is an introduction, not a full explanation of everything.
+It should stay simple and should not go into product or domain detail.
+It should be understandable to a non-technical reader.
+
+### Homepage primary goals
+The homepage must do these things well:
+
+1. Explain what Temporis is in plain language.
+2. Make the company structure legible.
+3. Establish technical credibility without hype.
+4. Show that research and product belong to one company.
+5. Make it easy to continue into the rest of the site.
+
+### Homepage audience
+The homepage should work for a mixed first-visit audience:
+
+- prospective users
+- technical evaluators
+- investors and partners
+- press and ecosystem visitors
+
+The page should not assume prior familiarity with:
+
+- time series modeling
+- forecasting terminology
+- product names
+- internal research names such as Collie
+
+### Homepage core message
+At minimum, the homepage must communicate this:
+
+Temporis helps people uncover patterns in things like prices and demand, and make better decisions.
+
+It should also make these supporting ideas clear:
+
+- research is the technical engine
+- product is how the capability reaches users
+- the company exists to make advanced forecasting more accessible and useful
+
+### Homepage required sections
+The homepage should remain short and narrowly scoped.
+
+Required reading flow:
+
+1. Hero
+2. What Temporis is
+3. Launch focus
+4. Footer
+
+#### Hero
+The hero must include:
+
+- the company name
+- a plain-language headline
+- a short supporting explanation
+- a visible trust or restraint line
+
+The hero headline should answer:
+
+- what the company builds
+
+The hero should avoid unexplained technical terms such as:
+
+- time series
+- multimodal
+- multivariate
+- TSFM
+
+#### What Temporis Is
+This section should explain the company at a slightly broader level.
+
+It must clarify that Temporis has three public company surfaces:
+
+- Product
+- Research
 - Company
-- Contact
 
-Footer should include:
+These should be explained as parts of one company, not as disconnected offerings.
+
+This section may introduce the idea of forecasting, but should still use plain language first.
+
+#### Launch Focus
+This section should explain the launch posture.
+
+It must cover:
+
+- why Temporis matters in simple terms
+- why the launch site is intentionally simple
+
+#### Footer
+The homepage footer must include:
+
+- company name
+- short company descriptor
+- public contact email: `hello@temporis.co`
+- legal link to `terms.html`
+
+### Homepage content requirements
+Homepage copy must be:
+
+- concise
+- technically grounded
+- low-hype
+- understandable on a first read
+
+Copy should avoid:
+
+- consulting language
+- generic AI buzzwords
+- inflated market claims
+- performance promises
+- investment-advice language
+- unexplained internal terms
+
+The homepage should avoid domain-specific detail.
+Financial markets should not be a homepage focus.
+If technical language is used on the homepage, it should be explained immediately in plain language.
+
+### Homepage required meanings
+The homepage should make these distinctions legible:
+
+- Temporis is the company
+- Vista is a product surface, not the company
+- Collie is a research effort, not the public top-level brand
+- research and product are connected, not separate narratives
+
+## Product page requirements
+The Products page applies to `product.html`.
+
+### Product page objective
+The Products page should introduce the two product surfaces:
+
 - Vista
 - Platform
-- Company
-- Contact
-- Privacy
-- Terms
-- Disclaimer
 
----
+It should explain how Temporis turns forecasting into products people can use.
+It should explain what each product is for and how they differ.
 
-## 15. Page-level design requirements
-## 15.1 Home page
-### Goal
-Explain the company and route users correctly.
+This is the page where the financial-markets domain should be stated clearly.
+This page can be more specific than the homepage because readers are now looking for product detail.
 
-### Required sections
-1. **Hero**
-   - one clear statement that Temporis is an AI company for time-series forecasting
-   - short supporting sentence connecting the AI/model layer to practical customer value
-   - CTA to Products
+### Product page required content
+The Products page must include:
 
-2. **Why Temporis**
-   - why forecasting matters
-   - why time-series foundation models matter
-   - why the company exists
+- Vista as a forecast gallery
+- Platform as an API product
+- a light mention of Collie
+- financial markets as the initial domain
 
-3. **Products split**
-   - Vista card
-   - Platform card
+The Products page should explain product value in user terms:
 
-4. **Company / research section**
-   - short explanation of the core research / model layer
-   - how it powers Vista and Platform
+- Vista helps people read forecasts through charts
+- Platform helps developers access forecasting through an API
+- the products are built for financial-market use cases first
 
-5. **Trust / responsible use section**
-   - financial-market context
-   - careful claims
-   - clear limitations cue
+### Product page required meanings
+The Products page should make these distinctions clear:
 
-6. **Final CTA block**
-   - route users into Products or Contact
+- Vista provides charts
+- Platform provides API access
+- the underlying model is Collie
+- the product focus is financial markets
 
-### Design note
-The homepage should not try to explain everything. It should establish the company, the product structure, and the next step.
+The page should explain the two products in a simple user sequence:
 
----
+- Vista helps users read forecasts, explore them, and use them in strategy
+- Platform helps developers access Collie, control model behavior, and integrate it into their own systems
 
-## 15.2 Vista page
-### Goal
-Explain the visual forecast product direction and drive understanding / interest until the dedicated product host is ready.
+The Products page may use more concrete domain language such as:
 
-### Required content
-- who it is for
-- what users see
-- why it is useful
-- screenshots
-- what makes the chart experience valuable
-- CTA to the future `vista.temporis.co` direction
-- disclaimer language
+- market data
+- forecasts
+- charts
+- API
 
-### Design note
-This page should feel visual, serious, and intentional.
+But it should still avoid unexplained research jargon.
 
-For the interim phase, it should work as an "imagining" page: bold, visually expressive, and clearly connected to a future dedicated product experience.
+## Research page requirements
+The Research page applies to `research.html`.
 
----
+### Research page objective
+The Research page should introduce Collie as the Temporis time series foundation model.
+This page can be more technical than the rest of the site.
+It should make the research feel meaningful and show long-term company value and potential.
 
-## 15.3 Platform page
-### Goal
-Explain the API product direction and drive technical interest until the dedicated product host is ready.
+### Research page required content
+The Research page must include:
 
-### Required content
-- who it is for
-- what the API provides
-- example use cases
-- simple request example or code snippet
-- access flow
-- CTA to the future `platform.temporis.co` direction
+- Collie as the core forecasting model at Temporis
+- TSFM as the model category
+- multivariate capability
+- multimodality
+- a clear statement that the research is built to advance the state of the art in forecasting
 
-### Design note
-This page should feel more technical than Vista, but remain easy to scan.
+The Research page should stay focused on the model and not expand into product-market detail.
+Unlike the homepage, this page may use technical terms directly, but they should still be explained well enough for an interested non-specialist reader.
+Technical explanation should follow a clear order:
 
-For the interim phase, it should also work as an "imagining" page: clear, bold, and future-facing without pretending the full product host already exists.
+1. time series
+2. multivariate
+3. multimodality
 
----
+If the page mentions finance, it should present finance as the starting point for Collie, not the limit of where it can be useful.
 
-## 15.4 Company page
-### Goal
-Give confidence that Temporis is a real, focused company.
+The page should imply long-term product and company value through the model's broader usefulness and ability to grow stronger over time, without turning into a product page.
 
-### Required content
-- mission
-- focus on time-series forecasting
-- current market wedge
-- research / model explanation
-- how the core engine powers Vista and Platform
-- concise team section if ready
-- contact route
+## Company page requirements
+The Company page applies to `company.html`.
 
-### Design note
-Keep this page factual and clean.
+### Company page objective
+The Company page should explain the vision and nature of the company.
 
-The company page should absorb the model / research story so visitors do not have to interpret a separate internal concept before understanding the company.
+### Company page required content
+The Company page must include:
 
----
+- company vision
+- company nature
+- a statement that Temporis is an AI company helping people and businesses make better decisions under uncertainty
+- a statement that Temporis develops forecasting technology and makes it accessible through products and integrations
+- public contact information
 
-## 15.5 Contact page
-### Goal
-Capture serious inbound.
+The Company page should inspire confidence without becoming a manifesto.
+This page should speak in company language rather than research language.
 
-### Required content
-- short form
-- inquiry type selector
-- contact email or clear contact path
+The Company page should help a general reader understand:
 
-Suggested inquiry types:
-- product
-- API / enterprise
-- partnership
-- investor / press
-- general
+- why the company exists
+- what kind of company it wants to be
+- how to contact it
 
----
+The page should lead with:
 
-## 16. Essential components
-The first version only needs a small component system.
+- Temporis as an AI company
+- helping people and businesses make better decisions under uncertainty
 
-### Required UI components
-- top navigation
-- CTA buttons
-- section headers
-- product cards
-- screenshot / media frames
-- comparison or split-layout blocks
-- code snippet block
-- FAQ / disclosure block if needed
-- contact form
-- footer
+It should then explain that the company develops forecasting technology and makes it accessible through products and integrations.
 
-### Navigation principle
-Do not make visitors choose between too many abstract top-level tabs.
+## Launch claims and trust requirements
+The launch site must establish trust through restraint.
 
-Top-level navigation should stay at:
-- Products
-- Company
-- Contact
+Requirements:
 
-### Component principle
-Every component should support:
-- clarity,
-- trust,
-- and route-to-action.
-
-Do not introduce decorative components without purpose.
-
----
-
-## 17. Content and messaging rules
-The copy should emphasize:
-- forecasting,
-- decision support,
-- product clarity,
-- technical rigor,
-- and company focus.
-
-### Prefer
-- direct explanation
-- plain technical language
-- short paragraphs
-- specific nouns
-- product names used consistently
-
-### Avoid
-- generic claims about transforming business
-- consulting-style abstraction
-- long philosophical copy
-- broad promises disconnected from product reality
-
----
-
-## 18. Trust, risk, and compliance guidance
-Because Temporis is operating in a forecasting context for financial markets, trust design is essential.
-
-### Required
 - no guaranteed-outcome language
-- no exaggerated performance claims
-- clear disclaimer / risk disclosure page
-- careful presentation of charts and examples
-- internal review for any quantitative claims published on the site
+- no unsupported model-performance claims
+- no investment-advice framing
+- no exaggerated product claims
 
-### Design implication
-Trust should not be confined to the footer.
-It should be reflected in the tone, visual restraint, copy precision, and claim discipline.
+The site may talk about:
 
----
+- decision support
+- forecasting intelligence
+- research direction
+- product direction
 
-## 19. Implementation guidance
-## Site type
-The company website should remain **static or statically generated** for now.
+The site should avoid:
 
-### Why
-This stage requires:
-- speed,
-- simplicity,
-- strong performance,
-- easy maintenance,
-- and clear content structure.
+- public benchmark claims unless separately reviewed
+- trading-performance language
+- language that implies certainty
 
-A dynamic site is not needed for the root marketing site at this stage.
+## Responsive requirements
+Responsive quality is required for launch.
 
-### Dynamic elements allowed
-Use dynamic systems only where clearly necessary:
-- contact form backend
-- analytics
-- email capture
-- light CMS later if research content grows
+The launch pages must:
 
----
+- work clearly on desktop and mobile
+- preserve hierarchy when stacked
+- keep navigation understandable on smaller screens
+- avoid awkward multi-row header behavior
+- keep tap targets usable on touch devices
 
-## 20. Technical quality requirements
-### Performance
-The site should load quickly and feel lightweight.
+## Accessibility requirements
+The launch pages must:
 
-### SEO
-Must include:
-- descriptive titles
-- meta descriptions
-- clean URLs
-- crawlable navigation
-- sitemap
-- internal linking
-- basic structured data where appropriate
+- use semantic heading order
+- keep visible keyboard focus styles
+- maintain readable text contrast
+- avoid conveying meaning by color alone
+- remain usable with keyboard navigation
 
-### Accessibility
-Must include:
-- semantic headings
-- keyboard access
-- sufficient contrast
-- alt text
-- visible focus states
-- accessible forms
-- mobile responsiveness
+## SEO and metadata requirements
+Each launch page must have:
 
-### Responsive quality
-Responsive behavior is a launch requirement, not a later polish task.
+- a unique title
+- a unique meta description
+- clear language aligned with actual visitor intent
+- crawlable navigation links
 
-The site must:
-- work on common desktop and mobile viewport sizes
-- preserve content clarity and navigation comprehension on mobile
-- keep interactive elements large enough for touch use
-- avoid layouts that only work in desktop mockups
+## Definition of done
+The launch website requirements are satisfied when:
 
-### Analytics
-Track only essential events:
-- homepage CTA clicks
-- Vista CTA clicks
-- Platform CTA clicks
-- contact submissions
-- key page traffic
-
----
-
-## 21. What is out of scope for v1
-Do not prioritize:
-- heavy animation
-- complex CMS infrastructure
-- large investor portal
-- extensive blog system
-- personalized content
-- account-aware root-domain experiences
-- decorative visual complexity
-
----
-
-## 22. Launch success criteria
-The site succeeds if a first-time visitor can quickly understand:
-- what Temporis does,
-- what Collie is,
-- how Vista differs from Platform,
-- why the company is credible,
-- and what to do next.
-
-For the design team, success means:
-- the interface feels serious and clear,
-- the brand feels distinctive without being loud,
-- and the design supports trust and conversion rather than decoration.
-
-It should also mean:
-- a visitor can understand the company structure from the top navigation alone
-- internal concepts do not require prior knowledge to decode
-- the site communicates like a strong pitch deck: legible, simple, and obvious
-
-For the implementation team, success means:
-- the site is fast,
-- simple,
-- accessible,
-- maintainable,
-- and easy to evolve.
-
-For responsive behavior, success means:
-- the site is usable and legible on both desktop and mobile
-- the navigation still communicates the company structure on smaller screens
-- key CTAs remain easy to find and use on touch devices
-
----
-
-## 23. Immediate next design deliverables
-The next phase should produce:
-1. homepage wireframe
-2. core sitemap and navigation spec
-3. visual direction board
-4. logo exploration directions
-5. typography and color system
-6. key page mockups
-   - Home
-   - Vista
-   - Platform
-   - Collie
-   - Company
-   - Contact
-7. component set
-8. responsive behavior rules
-
----
-
-## 24. Final guidance
-Do not over-design this company.
-
-Temporis should look like a strong early-stage AI company with serious technology and real products.
-
-The website should balance two truths at once:
-- it is a **product-led company** with clear product paths,
-- and it is an **AI company** whose model layer is the core source of value.
-
-The website should feel:
-- clear before clever,
-- confident before dramatic,
-- useful before ornamental,
-- and technically real rather than generically futuristic.
-
-That is the correct design strategy for this company at this stage.
+- `index.html`, `product.html`, `research.html`, `company.html`, and `terms.html` all exist
+- the main navigation clearly communicates the site structure
+- `terms.html` is linked from the footer and not treated as a top-level page
+- a first-time visitor can understand what Temporis is within one screen and one scroll of the homepage
+- the site feels serious, focused, and low-hype
+- the pages work cleanly on desktop and mobile
+- the copy can be traced back to [company.md](company.md)
