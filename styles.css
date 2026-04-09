@@ -414,6 +414,18 @@ p {
     max-width: 90ch;
 }
 
+body.page-company .page-header-grid p {
+    max-width: 112ch;
+}
+
+body.page-home .hero-copy > p {
+    max-width: 112ch;
+}
+
+body.page-home .section-intro p {
+    max-width: 112ch;
+}
+
 .trust-line,
 .meta-text,
 .small-note {
