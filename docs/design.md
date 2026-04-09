@@ -56,6 +56,45 @@ Implication for Temporis:
 - layout variety is good when it reflects page purpose
 - visual refinement should improve comprehension first
 
+## Working rules for iteration
+These rules apply when refining the launch site over time.
+
+### Core operating principles
+- prefer clarity over novelty
+- prefer familiarity over cleverness
+- prefer simplification over feature growth
+- prefer stable design systems over one-off visual fixes
+
+### Anti-improvisation rule
+Do not improvise new layout patterns once a direction has been chosen.
+
+If a structure, hierarchy, or interaction pattern is specified, implement that pattern directly before trying to optimize it.
+
+Do not solve a local problem by inventing a different global pattern.
+
+If a visual change is rejected, stop iterating in the same direction. Revert, diagnose the failure mode, and only then continue.
+
+### Visual iteration rule
+For visual work:
+
+- use existing project design rules first
+- compare against familiar reference patterns when needed
+- judge layouts holistically, not only by local balance
+- avoid changes that are internally coherent but globally unfamiliar
+
+### Mobile rule
+Do not force desktop navigation patterns into mobile layouts.
+
+On mobile:
+
+- simplify structure
+- reduce scan cost
+- keep one clean header row whenever possible
+- preserve clear hierarchy between brand, navigation, and primary action
+
+### Documentation rule
+When a repeated design failure appears, document the principle that should prevent it from happening again.
+
 ## Launch page set
 Design for exactly these launch pages:
 
@@ -225,8 +264,9 @@ The Company page should feel practical and mission-led.
 It should lead with:
 
 - AI company identity
-- better decisions under uncertainty
-- forecasting technology made accessible through products and integrations
+- forecasting technology as the company focus
+- a direct mission about delivering advanced forecasting technology to people
+- products and integrations as the delivery paths
 
 The Company page should feel:
 

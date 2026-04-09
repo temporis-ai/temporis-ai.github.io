@@ -304,7 +304,7 @@ The founder's long-form vision included:
 
 For public language, the direction was refined toward:
 
-- an AI company helping people and businesses make better decisions under uncertainty
+- an AI company that develops forecasting technology
 
 #### Mission logic
 Important interview conclusion:
@@ -314,9 +314,9 @@ Important interview conclusion:
 
 That leads to this public structure:
 
-1. help people and businesses make better decisions under uncertainty
-2. develop forecasting technology
-3. make it accessible through products and integrations
+1. state that Temporis is an AI company that develops forecasting technology
+2. state that research and product are connected from the start
+3. explain that the technology is delivered through products and integrations
 
 #### Integrations
 The founder clarified that `integrations` should mainly make readers think of:
@@ -455,7 +455,7 @@ But the page itself should not enumerate those categories too heavily.
 - through products and integrations
 - integrations into business, more concretely, their data flow
 - Company page should lead with "AI company".
-- Company page should then say helping people and businesses make better decisions under uncertainty.
+- Company page should then say that Temporis develops forecasting technology and makes it accessible through products and integrations.
 - Then explain that the company develops forecasting technology and makes it accessible through products and integrations.
 
 ### Contact
@@ -485,7 +485,7 @@ Financial markets are the current starting point.
 Temporis helps people uncover patterns and make better decisions.
 
 ### Short description
-Temporis is an AI company developing forecasting technology through products and integrations.
+Temporis is an AI company that develops forecasting technology.
 
 ### Expanded description
 Temporis is focused on turning forecasting research into useful products. The company is starting in financial markets, where forecasting is visible and easy to demonstrate in practice. The longer-term goal is to build forecasting capability that can support decisions across many domains and bring better forecasting to more people and businesses.
@@ -493,13 +493,13 @@ Temporis is focused on turning forecasting research into useful products. The co
 ## Mission and company direction
 
 ### Mission
-Bring better forecasting to more people and businesses.
+Deliver advanced forecasting technology to people.
 
 ### Long-term direction
 Build strong general-purpose forecasting capability and turn that capability into useful products and integrations.
 
 ### Current company posture
-The company is focused on turning forecasting research into usable products and integrations.
+The company is focused on making forecasting technology accessible through products and integrations.
 
 ## Why the company exists
 Temporis exists because better forecasting can lead to better decisions, and better decisions can improve how people and organizations use time, money, and resources.
@@ -552,7 +552,7 @@ Introduce Temporis at the company level in a way that is understandable to non-t
 Temporis helps people uncover patterns and make better decisions.
 
 #### Supporting message
-Temporis is building AI tools that help people understand what may happen next and act with more context.
+Temporis is an AI company focused on forecasting.
 
 #### Example framing
 Use examples such as:
@@ -700,10 +700,10 @@ Finance is the starting point for Collie, not the limit of where it can be usefu
 Explain the vision and nature of Temporis in company language rather than research language.
 
 #### Company nature
-Temporis is a research and product company.
+Temporis combines research and product from the start, so progress in forecasting becomes something people and businesses can use.
 
-#### Vision
-Temporis is an AI company helping people and businesses make better decisions under uncertainty.
+#### Company statement
+Temporis is an AI company that develops forecasting technology.
 
 #### Integration meaning
 When talking about integrations, the clearest concrete meaning is:
@@ -711,9 +711,14 @@ When talking about integrations, the clearest concrete meaning is:
 - integration into business data flows
 
 #### Company role
-Temporis develops forecasting technology and makes it accessible through products and integrations.
+Temporis makes strong forecasting technology accessible through products and integrations.
 
-The company aims to serve both individuals and businesses.
+#### Mission
+Deliver advanced forecasting technology to people.
+
+#### Delivery paths
+- Products
+- Integrations
 
 #### Contact
 Keep contact broad and simple on the page:
@@ -724,7 +729,7 @@ Keep contact broad and simple on the page:
 #### Footer descriptor
 Shared footer descriptor:
 
-- `AI forecasting solutions for better decisions.`
+- `AI forecasting solutions`
 
 ## Why time series matters
 Time series is the structure behind data that changes over time.
@@ -943,10 +948,7 @@ The homepage may draw from the content below.
 Temporis helps people uncover patterns in things like prices and demand, and make better decisions.
 
 ### Supporting explanation
-Temporis is building AI tools that help people understand what may happen next and act with more context.
-
-### Trust line
-Built for decision support and disciplined interpretation.
+Temporis is an AI company focused on forecasting.
 
 ### Why markets first message
 Financial markets are the starting point because they are familiar to many people and make forecasting easy to demonstrate in practice.
@@ -973,7 +975,7 @@ It should be presented as the main contact for:
 ## Boilerplate
 
 ### Short boilerplate
-Temporis is an AI company developing forecasting technology through products and integrations.
+Temporis is an AI company that develops forecasting technology.
 
 ### Longer boilerplate
-Temporis is an AI company helping people and businesses make better decisions under uncertainty. It develops forecasting technology and makes it accessible through products and integrations.
+Temporis is an AI company that develops forecasting technology. It combines research and product from the start, and makes forecasting technology accessible through products and integrations.

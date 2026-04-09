@@ -132,14 +132,14 @@ File:
 
 Purpose:
 
-- explain mission, nature, and contact
+- explain company identity, mission, and contact
 
 Required sections:
 
 - shared header
 - company introduction
-- mission / better decisions under uncertainty
-- forecasting technology through products and integrations
+- mission section
+- products and integrations section
 - contact section
 - shared footer
 
@@ -242,7 +242,7 @@ The brand should link to `index.html`.
 Every launch page should use a shared footer that includes:
 
 - company name
-- short descriptor: `AI forecasting solutions for better decisions.`
+- short descriptor: `AI forecasting solutions`
 - `hello@temporis.co`
 - `terms.html`
 

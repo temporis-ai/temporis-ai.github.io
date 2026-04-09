@@ -76,7 +76,7 @@ The site structure must be immediately legible:
 All launch pages should include a footer with:
 
 - company name
-- short company descriptor: `AI forecasting solutions for better decisions.`
+- short company descriptor: `AI forecasting solutions`
 - public contact email: `hello@temporis.co`
 - link to `terms.html`
 
@@ -168,7 +168,6 @@ The hero must include:
 - the company name
 - a plain-language headline
 - a short supporting explanation
-- a visible trust or restraint line
 
 The hero headline should answer:
 
@@ -318,15 +317,16 @@ The page should imply long-term product and company value through the model's br
 The Company page applies to `company.html`.
 
 ### Company page objective
-The Company page should explain the vision and nature of the company.
+The Company page should explain what kind of company Temporis is, what its mission is, and how to contact it.
 
 ### Company page required content
 The Company page must include:
 
-- company vision
-- company nature
-- a statement that Temporis is an AI company helping people and businesses make better decisions under uncertainty
-- a statement that Temporis develops forecasting technology and makes it accessible through products and integrations
+- a Company section that states Temporis is an AI company that develops forecasting technology
+- a statement that research and product are connected from the start
+- a Mission section about delivering advanced forecasting technology to people
+- a statement that Temporis makes forecasting technology accessible through products and integrations
+- product and integration delivery paths
 - public contact information
 
 The Company page should inspire confidence without becoming a manifesto.
@@ -335,16 +335,16 @@ This page should speak in company language rather than research language.
 
 The Company page should help a general reader understand:
 
-- why the company exists
-- what kind of company it wants to be
+- what kind of company Temporis is
+- what its mission is
 - how to contact it
 
 The page should lead with:
 
 - Temporis as an AI company
-- helping people and businesses make better decisions under uncertainty
+- forecasting technology as the company focus
 
-It should then explain that the company develops forecasting technology and makes it accessible through products and integrations.
+It should then explain that Temporis delivers this through products and integrations.
 
 ## Launch claims and trust requirements
 The launch site must establish trust through restraint.
