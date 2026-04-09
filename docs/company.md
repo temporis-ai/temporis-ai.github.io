@@ -21,10 +21,20 @@ This document has two layers:
 
 The raw-answer section is intentionally less polished. It exists to preserve meaning before it is translated into public-facing language.
 
+For current website work, treat these sections as the live source of truth:
+
+- `Company identity`
+- `Positioning`
+- `Mission and company direction`
+- `Page-by-page source content`
+- `Safe public claims`
+- `Boilerplate`
+
 When there is tension between the two:
 
 - treat the raw answers as founder intent
 - treat the refined sections as audience-adapted website content
+- prefer the refined sections when aligning docs to the current live site
 
 ## Raw founder answers
 
@@ -45,6 +55,7 @@ Use it when:
 - the team wants to understand the reasoning behind the refined source content
 
 The wording here is still close to the interview, but grouped by topic so it is easier to reuse.
+It may preserve earlier phrasing that is useful for context but should not override the refined source sections later in this document.
 
 ### Company definition
 
@@ -463,10 +474,10 @@ Temporis
 Temporis is an AI company.
 
 ### Company focus
-Temporis builds time series foundation models and forecasting products.
+Temporis develops forecasting technology through products and integrations.
 
 ### Initial domain
-The first domain is financial markets.
+Financial markets are the current starting point.
 
 ## Positioning
 
@@ -474,7 +485,7 @@ The first domain is financial markets.
 Temporis helps people uncover patterns and make better decisions.
 
 ### Short description
-Temporis is a research and product company building AI tools for forecasting, starting with financial markets.
+Temporis is an AI company developing forecasting technology through products and integrations.
 
 ### Expanded description
 Temporis is focused on turning forecasting research into useful products. The company is starting in financial markets, where forecasting is visible and easy to demonstrate in practice. The longer-term goal is to build forecasting capability that can support decisions across many domains and bring better forecasting to more people and businesses.
@@ -488,7 +499,7 @@ Bring better forecasting to more people and businesses.
 Build strong general-purpose forecasting capability and turn that capability into useful products and integrations.
 
 ### Current company posture
-The company is focused and building its first generation of products.
+The company is focused on turning forecasting research into usable products and integrations.
 
 ## Why the company exists
 Temporis exists because better forecasting can lead to better decisions, and better decisions can improve how people and organizations use time, money, and resources.
@@ -558,11 +569,12 @@ These examples should make the idea easier to understand without locking the hom
 - avoid technical jargon in the hero
 - avoid financial-market detail on the homepage
 - create curiosity about what the company can do
+- separate `Temporis`, `What Temporis Is`, and `Why It Matters` into visually distinct sections
 
 ### Products page source
 
 #### Purpose
-Introduce Vista and Platform, explain the relationship to Collie, and state that the launch domain is financial markets.
+Introduce Vista and Platform and state that the launch domain is financial markets.
 
 #### Main relationship
 One model, two products for different users and different ways of working.
@@ -617,12 +629,19 @@ Recommended sequence for explanation:
 3. integrate it into other systems
 
 #### Domain framing
-The first domain for these products is financial markets.
+Financial markets are the starting point for these products.
 
 Why this is the starting point:
 
 - it is familiar to many people
 - it is a strong way to demonstrate what the company can do
+
+#### Layout note
+Vista and Platform should use the same composition:
+
+- text on the left
+- visual panel on the right
+- matching panel size
 
 ### Research page source
 
@@ -630,12 +649,12 @@ Why this is the starting point:
 Introduce Collie in a way that feels technically serious and impressive, while still remaining understandable to an interested non-specialist reader.
 
 #### Opening frame
-Start model-first.
+Start model-first, but keep the opening and model explanation in one merged section.
 
 Recommended structure:
 
 1. introduce Collie as the core forecasting model
-2. name it as a time series foundation model
+2. name it as a time series forecasting foundation model
 3. explain the key technical properties
 4. explain why those properties matter
 5. position finance as the current starting point, not the limit
@@ -644,7 +663,7 @@ Recommended structure:
 #### Collie description
 Collie is the core forecasting model at Temporis.
 
-It is a time series foundation model built to advance the state of the art in forecasting.
+It is a time series forecasting foundation model built to advance the state of the art in forecasting.
 
 #### Technical terms
 Explain in this order:
@@ -702,6 +721,11 @@ Keep contact broad and simple on the page:
 - `hello@temporis.co`
 - broad invitation for questions or conversations
 
+#### Footer descriptor
+Shared footer descriptor:
+
+- `AI forecasting solutions for better decisions.`
+
 ## Why time series matters
 Time series is the structure behind data that changes over time.
 
@@ -722,7 +746,7 @@ For non-technical readers, this can be expressed more simply as:
 - decisions about what may happen next
 
 ## Why financial markets first
-Financial markets are the first domain because they force rigor.
+Financial markets are the current starting point because they force rigor.
 
 They also make forecasting easy to demonstrate because the domain is familiar to many people and the results are visible quickly.
 
@@ -809,13 +833,13 @@ Platform is better suited to users who want to consume forecasts programmaticall
 ## Research effort
 
 ### Current model effort
-Collie is the core model behind Temporis.
+Collie is the core forecasting model at Temporis.
 
 ### Safe description
 Collie is the forecasting model that powers Temporis products and use cases.
 
 ### Research theme
-The research direction is toward time series foundation models.
+The research direction is toward time series forecasting foundation models.
 
 ### Safe supporting ideas
 The public site may say that the research aims to support:
@@ -893,13 +917,14 @@ Avoid:
 ## Safe public claims
 These are safe types of claims for the homepage and company site:
 
-- Temporis is building time series foundation models.
-- Temporis is building forecasting products.
-- The first domain is financial markets.
-- The company is research-driven and product-led.
+- Temporis is an AI company.
+- Temporis develops forecasting technology through products and integrations.
+- Temporis helps people uncover patterns and make better decisions.
+- Financial markets are the current starting domain for the products.
+- The company connects research and products from the start.
 - Vista is the visual product surface.
 - Platform is the programmatic product surface.
-- Collie is the current research effort.
+- Collie is the core forecasting model at Temporis.
 - Forecasts support interpretation and decision-making.
 
 ## Claims to avoid unless separately reviewed
@@ -921,20 +946,10 @@ Temporis helps people uncover patterns in things like prices and demand, and mak
 Temporis is building AI tools that help people understand what may happen next and act with more context.
 
 ### Trust line
-Built for decision support and disciplined interpretation. No guaranteed outcomes.
-
-### Company structure message
-Temporis has three public company surfaces:
-
-- Product for how the capability reaches users
-- Research for the model direction and Collie
-- Company for vision, values, and contact
-
-### Launch-focus message
-The launch site is intentionally simple so the company story remains clear, credible, and easy to maintain.
+Built for decision support and disciplined interpretation.
 
 ### Why markets first message
-Financial markets are the first domain because they are familiar to many people and make forecasting easy to demonstrate in practice.
+Financial markets are the starting point because they are familiar to many people and make forecasting easy to demonstrate in practice.
 
 ### Value message
 Temporis exists to make advanced forecasting easier to access and more useful in the real world.
@@ -958,7 +973,7 @@ It should be presented as the main contact for:
 ## Boilerplate
 
 ### Short boilerplate
-Temporis is a research and product company building AI forecasting tools.
+Temporis is an AI company developing forecasting technology through products and integrations.
 
 ### Longer boilerplate
-Temporis is a research and product company building AI forecasting tools that help people and organizations make better decisions. The company is building its first generation of products starting with financial markets, while pursuing a broader vision for forecasting across many domains.
+Temporis is an AI company helping people and businesses make better decisions under uncertainty. It develops forecasting technology and makes it accessible through products and integrations.

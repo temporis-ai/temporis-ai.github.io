@@ -152,7 +152,7 @@ Recommended reading flow:
 
 1. Hero
 2. What Temporis is
-3. Why it matters / launch focus
+3. Why it matters
 4. Footer
 
 Hero intent:
@@ -174,7 +174,7 @@ It should:
 
 - introduce Vista first
 - introduce Platform second
-- mention financial markets as the first domain
+- mention financial markets as the starting point
 - mention Collie lightly
 
 Recommended reading flow:
@@ -182,7 +182,6 @@ Recommended reading flow:
 1. Product page introduction
 2. Vista
 3. Platform
-4. Short closing connection back to Temporis
 
 Vista should feel:
 
@@ -196,6 +195,12 @@ Platform should feel:
 - controlled
 - integration-ready
 
+Vista and Platform should share the same layout direction:
+
+- explanatory text on the left
+- visual or code panel on the right
+- matched panel size so the two sections feel like one system
+
 ### Research
 The Research page should make the research feel meaningful.
 
@@ -207,8 +212,8 @@ It should leave readers with the impression that:
 
 Recommended reading flow:
 
-1. Collie introduction
-2. What a time series foundation model means
+1. One merged opening section introducing Collie
+2. Time series
 3. Multivariate
 4. Multimodal
 5. Why the capabilities matter
@@ -234,6 +239,8 @@ It should not feel like:
 - a manifesto
 - a research abstract
 - a generic startup mission page
+
+The `Company`, `Mission`, and `Contact` sections should be visually distinct, but should still use the same page grammar. `Contact` should not switch into a special boxed CTA treatment.
 
 ## Navigation UX
 The header should use this order:
@@ -281,6 +288,7 @@ Refinement rules:
 - prefer one strong panel over three weak ones
 - let whitespace separate ideas instead of adding extra borders everywhere
 - use page-specific emphasis so Home, Products, Research, and Company do not feel templated
+- keep footer columns mechanically consistent by using the same heading and body structure in each column
 
 ## Tone and copy in design
 Design and copy should work together.
@@ -367,8 +375,8 @@ Practical meaning:
 
 Recommended structural patterns:
 
-- Home: editorial intro, then orientation, then clear next paths
-- Products: overview, domain framing, then product-by-product explanation
+- Home: company intro, then what Temporis is, then why it matters
+- Products: overview, then product-by-product explanation
 - Research: model-first explanation with ordered concept building
 - Company: mission first, operating model second, contact last
 

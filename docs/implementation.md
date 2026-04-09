@@ -85,7 +85,7 @@ Required sections:
 - shared header
 - hero
 - what Temporis is
-- why it matters / launch focus
+- why it matters
 - shared footer
 
 ### Products
@@ -103,7 +103,6 @@ Required sections:
 - page introduction
 - Vista section
 - Platform section
-- short closing connection to Temporis
 - shared footer
 
 ### Research
@@ -118,7 +117,7 @@ Purpose:
 Required sections:
 
 - shared header
-- Collie introduction
+- merged Collie introduction plus model explanation
 - explanation of time series
 - explanation of multivariate
 - explanation of multimodal
@@ -182,13 +181,12 @@ Use a small repeated component vocabulary.
 - `bridge-panel`
 - `sequence-item`
 - `legal-shell`
+- `footer-body`
 
 ### Optional visual components
 - `media-frame`
-- `chart-mock`
 - `mini-chart`
 - `mini-code`
-- `metric-tag`
 
 Only keep optional components if they support the current launch pages.
 
@@ -244,9 +242,14 @@ The brand should link to `index.html`.
 Every launch page should use a shared footer that includes:
 
 - company name
-- short descriptor
+- short descriptor: `AI forecasting solutions for better decisions.`
 - `hello@temporis.co`
 - `terms.html`
+
+The three footer columns should use the same internal structure:
+
+- heading
+- one body row
 
 ## Responsive implementation rules
 Responsive behavior must be built in from the start.
@@ -309,5 +312,5 @@ Implementation is done when:
 ## Immediate next step
 The next practical step is:
 
-1. align [index.html](../index.html) to the current docs
-2. adjust [styles.css](../styles.css) only as needed to support that page cleanly
+1. keep the docs aligned with the live pages
+2. make future page changes through browser review plus small CSS/HTML passes

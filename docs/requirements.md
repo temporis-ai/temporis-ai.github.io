@@ -76,7 +76,7 @@ The site structure must be immediately legible:
 All launch pages should include a footer with:
 
 - company name
-- short company descriptor
+- short company descriptor: `AI forecasting solutions for better decisions.`
 - public contact email: `hello@temporis.co`
 - link to `terms.html`
 
@@ -112,8 +112,7 @@ The homepage should work as the front door to the company.
 On a first visit, a reader should quickly understand:
 
 - what Temporis is
-- what the company builds
-- how Product, Research, and Company fit together
+- why the company matters
 
 The homepage is an introduction, not a full explanation of everything.
 It should stay simple and should not go into product or domain detail.
@@ -123,10 +122,9 @@ It should be understandable to a non-technical reader.
 The homepage must do these things well:
 
 1. Explain what Temporis is in plain language.
-2. Make the company structure legible.
+2. Explain why the company matters.
 3. Establish technical credibility without hype.
 4. Show that research and product belong to one company.
-5. Make it easy to continue into the rest of the site.
 
 ### Homepage audience
 The homepage should work for a mixed first-visit audience:
@@ -161,7 +159,7 @@ Required reading flow:
 
 1. Hero
 2. What Temporis is
-3. Launch focus
+3. Why it matters
 4. Footer
 
 #### Hero
@@ -186,23 +184,12 @@ The hero should avoid unexplained technical terms such as:
 #### What Temporis Is
 This section should explain the company at a slightly broader level.
 
-It must clarify that Temporis has three public company surfaces:
+It should explain that Temporis is an AI company focused on forecasting and that research and product belong to the same company.
 
-- Product
-- Research
-- Company
+#### Why It Matters
+This section should explain why better forecasting matters in simple terms.
 
-These should be explained as parts of one company, not as disconnected offerings.
-
-This section may introduce the idea of forecasting, but should still use plain language first.
-
-#### Launch Focus
-This section should explain the launch posture.
-
-It must cover:
-
-- why Temporis matters in simple terms
-- why the launch site is intentionally simple
+It may use supporting cards or panels, but they should read as one coherent row rather than navigation aids.
 
 #### Footer
 The homepage footer must include:
@@ -283,6 +270,11 @@ The page should explain the two products in a simple user sequence:
 - Vista helps users read forecasts, explore them, and use them in strategy
 - Platform helps developers access Collie, control model behavior, and integrate it into their own systems
 
+Vista and Platform should use the same layout pattern:
+
+- text on the left
+- visual panel on the right
+
 The Products page may use more concrete domain language such as:
 
 - market data
@@ -296,22 +288,23 @@ But it should still avoid unexplained research jargon.
 The Research page applies to `research.html`.
 
 ### Research page objective
-The Research page should introduce Collie as the Temporis time series foundation model.
+The Research page should introduce Collie as the Temporis time series forecasting foundation model.
 This page can be more technical than the rest of the site.
 It should make the research feel meaningful and show long-term company value and potential.
 
 ### Research page required content
 The Research page must include:
 
+- a single merged opening section introducing Collie
 - Collie as the core forecasting model at Temporis
-- TSFM as the model category
+- time series forecasting foundation model as the model category
 - multivariate capability
 - multimodality
 - a clear statement that the research is built to advance the state of the art in forecasting
 
 The Research page should stay focused on the model and not expand into product-market detail.
 Unlike the homepage, this page may use technical terms directly, but they should still be explained well enough for an interested non-specialist reader.
-Technical explanation should follow a clear order:
+Technical explanation should follow a clear order inside the opening section:
 
 1. time series
 2. multivariate
@@ -338,6 +331,7 @@ The Company page must include:
 
 The Company page should inspire confidence without becoming a manifesto.
 This page should speak in company language rather than research language.
+`Company`, `Mission`, and `Contact` should read as separate sections, but should still use one consistent page system rather than switching into a different callout style for contact.
 
 The Company page should help a general reader understand:
 
