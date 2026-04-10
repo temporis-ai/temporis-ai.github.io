@@ -35,10 +35,11 @@ The implementation should support these files:
 - [product.html](../product.html)
 - [research.html](../research.html)
 - [company.html](../company.html)
+- [privacy.html](../privacy.html)
 - [terms.html](../terms.html)
 - [styles.css](../styles.css)
 
-Legacy files such as `about.html`, `contact.html`, `vista.html`, `platform.html`, `privacy.html`, and `disclaimer.html` should not drive the current implementation plan.
+Legacy files such as `about.html`, `contact.html`, `vista.html`, `platform.html`, and `disclaimer.html` should not drive the current implementation plan.
 
 ## Build order
 Implement the site in layers.
@@ -61,6 +62,7 @@ Implement the site in layers.
 - Products page
 - Research page
 - Company page
+- Privacy page
 - Terms page
 
 ### Layer 4: consistency pass
@@ -143,14 +145,20 @@ Required sections:
 - contact section
 - shared footer
 
-### Terms
+### Privacy And Terms
 File:
 
+- [privacy.html](../privacy.html)
 - [terms.html](../terms.html)
 
 Purpose:
 
-- readable legal page
+- readable legal pages
+
+Scope note:
+
+- `privacy.html` and `terms.html` are shared company-level legal pages
+- product-specific subscription terms should live in the product repo that owns the subscription
 
 Required sections:
 
@@ -236,7 +244,9 @@ Every launch page should use the same top navigation:
 
 The brand should link to `index.html`.
 
-`terms.html` should appear only in the footer.
+`privacy.html` and `terms.html` should appear only in the footer.
+
+They are shared company-level legal links, not top-level navigation destinations.
 
 ## Footer rules
 Every launch page should use a shared footer that includes:
@@ -244,7 +254,11 @@ Every launch page should use a shared footer that includes:
 - company name
 - short descriptor: `AI forecasting solutions`
 - `hello@temporis.co`
+- `privacy.html`
 - `terms.html`
+
+These footer links provide the shared company-level legal baseline.
+They do not replace product-owned subscription terms for paid products.
 
 The three footer columns should use the same internal structure:
 
@@ -295,13 +309,13 @@ If a visual asset is not ready:
 3. Rework [product.html](../product.html).
 4. Rework [research.html](../research.html).
 5. Rework [company.html](../company.html).
-6. Rework [terms.html](../terms.html).
+6. Rework [privacy.html](../privacy.html) and [terms.html](../terms.html).
 7. Run a full cross-page consistency pass.
 
 ## Definition of implementation done
 Implementation is done when:
 
-- the five launch files exist and are coherent
+- the six launch files exist and are coherent
 - navigation and footer are consistent across pages
 - the pages follow [requirements.md](requirements.md)
 - the pages draw from [company.md](company.md)

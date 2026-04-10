@@ -27,6 +27,7 @@ For current website work, treat these sections as the live source of truth:
 - `Positioning`
 - `Mission and company direction`
 - `Page-by-page source content`
+- `Shared legal surfaces`
 - `Safe public claims`
 - `Boilerplate`
 
@@ -730,6 +731,64 @@ Keep contact broad and simple on the page:
 Shared footer descriptor:
 
 - `AI forecasting solutions`
+
+### Shared legal surfaces
+
+#### Purpose
+Define the company-level legal and trust language that belongs in this repo and may be reused by products where appropriate.
+
+This section is for:
+
+- shared privacy-policy direction
+- shared company-level terms direction
+- shared contact paths for legal and privacy requests
+
+This section is not for:
+
+- product-specific subscription terms
+- refund or renewal rules owned by a paid product
+- product-specific billing disclosures
+
+#### Privacy policy role
+The privacy policy in this repo should act as the shared company-level privacy surface for Temporis website pages and public product surfaces that choose to link to it.
+
+It may refer to:
+
+- website use
+- product surfaces
+- authentication
+- billing-state handling
+- service providers
+- operational logging and security
+- privacy contact paths
+
+The wording should stay broad, operational, and company-level.
+
+#### Terms-of-use role
+The terms page in this repo should act as the shared company-level terms-of-use surface.
+
+It should cover:
+
+- use of the Temporis website
+- informational nature of company content
+- no guarantee of outcomes
+- no investment-advice framing
+- company-level contact path for terms questions
+
+It should not be framed as the paid subscription agreement for Vista.
+
+#### Product-term boundary
+If a product has paid access or product-specific billing behavior, the product should own its own commercial terms.
+
+For launch:
+
+- this repo owns company-level privacy and baseline terms
+- Vista owns Vista subscription terms
+
+#### Contact paths
+Shared company-level contact paths may include:
+
+- `hello@temporis.co` for general questions and privacy questions or requests
 
 ## Why time series matters
 Time series is the structure behind data that changes over time.

@@ -36,10 +36,14 @@ The launch website must include these pages:
 
 The launch website must also include:
 
+- privacy page: `privacy.html`
 - terms page: `terms.html`
 
-`terms.html` should be linked in the footer only.
-It should not appear as a top-level navigation item.
+`privacy.html` and `terms.html` should be linked in the footer only.
+They should not appear as top-level navigation items.
+
+These two pages are company-level legal surfaces.
+They may be reused by products where appropriate, but they do not replace product-specific commercial terms such as Vista subscription terms.
 
 ## Launch navigation
 The top-level public navigation for launch should be:
@@ -78,7 +82,11 @@ All launch pages should include a footer with:
 - company name
 - short company descriptor: `AI forecasting solutions`
 - public contact email: `hello@temporis.co`
+- link to `privacy.html`
 - link to `terms.html`
+
+The footer legal links are the shared company-level baseline.
+Product-specific subscription terms should live with the product that owns the subscription.
 
 ### Required quality bar
 The launch site must be:
@@ -196,6 +204,7 @@ The homepage footer must include:
 - company name
 - short company descriptor
 - public contact email: `hello@temporis.co`
+- legal link to `privacy.html`
 - legal link to `terms.html`
 
 ### Homepage content requirements
@@ -369,6 +378,38 @@ The site should avoid:
 - trading-performance language
 - language that implies certainty
 
+## Shared legal-surface requirements
+
+### Privacy page role
+`privacy.html` should act as the shared company-level privacy policy for Temporis website surfaces and public product surfaces that choose to link to it.
+
+It should be allowed to mention shared product-supporting concepts such as:
+
+- authentication
+- billing-state handling
+- service providers
+- privacy contact paths
+
+These references should stay company-level and operational.
+They should not turn the page into product-specific subscription or account-management documentation.
+
+### Terms page role
+`terms.html` should act as a company-level terms-of-use page for the Temporis website and other company-owned public informational surfaces that link to it.
+
+It should:
+
+- stay focused on company-level website and informational-use terms
+- preserve the low-hype and no-guarantee posture
+- avoid pretending to be the commercial subscription agreement for Vista
+
+### Product-specific commercial terms
+If a product needs subscription, billing, refund, renewal, cancellation, or account-rule terms that go beyond the company-level baseline, those terms should live in the product repo that owns that product.
+
+For launch planning:
+
+- company-level privacy and baseline terms live in this repo
+- Vista-specific subscription terms live in the Vista repo
+
 ## Responsive requirements
 Responsive quality is required for launch.
 
@@ -400,9 +441,9 @@ Each launch page must have:
 ## Definition of done
 The launch website requirements are satisfied when:
 
-- `index.html`, `product.html`, `research.html`, `company.html`, and `terms.html` all exist
+- `index.html`, `product.html`, `research.html`, `company.html`, `privacy.html`, and `terms.html` all exist
 - the main navigation clearly communicates the site structure
-- `terms.html` is linked from the footer and not treated as a top-level page
+- `privacy.html` and `terms.html` are linked from the footer and not treated as top-level pages
 - a first-time visitor can understand what Temporis is within one screen and one scroll of the homepage
 - the site feels serious, focused, and low-hype
 - the pages work cleanly on desktop and mobile

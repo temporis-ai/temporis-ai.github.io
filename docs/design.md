@@ -102,9 +102,12 @@ Design for exactly these launch pages:
 - `product.html`
 - `research.html`
 - `company.html`
+- `privacy.html`
 - `terms.html`
 
-`terms.html` is footer-only.
+`privacy.html` and `terms.html` are footer-only.
+
+They are shared company-level legal surfaces, not top-level marketing pages.
 
 ## Core UX principle
 Each page should do one thing well.
@@ -117,7 +120,11 @@ The intended page roles are:
 - Products: explain Vista and Platform
 - Research: explain Collie
 - Company: explain vision, nature, and contact
-- Terms: provide legal text in a readable format
+- Privacy: provide shared company-level privacy text in a readable format
+- Terms: provide shared company-level terms text in a readable format
+
+These legal pages should cover the company-level baseline.
+They should not absorb product-specific subscription disclosures that belong with a paid product such as Vista.
 
 ## Audience model
 The launch site serves mixed audiences, but each page should still optimize for its own reading context.
